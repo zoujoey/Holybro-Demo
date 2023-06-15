@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "pose_pub = test_flight_controller_two.pose_pub:main",
-            "pose_pub_dummy = test_flight_controller_two.pose_pub_dummy:main"
+            "pose_pub_dummy = test_flight_controller_two.pose_pub_dummy:main",
+            "pose_pub_dum = test_flight_controller_two.pose_pub_dum:main"
         ],
     },
 )
