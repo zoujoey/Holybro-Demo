@@ -1,0 +1,453 @@
+[0.198s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.198s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f844dfc5280>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f844dfc5280>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f844dfc57c0>)
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.217s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/asrl/test_flight_ws_two'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/libmavconn) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros/libmavconn' with type 'ros.ament_cmake' and name 'libmavconn'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros/mavros' with type 'ros.ament_cmake' and name 'mavros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_extras) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros/mavros_extras' with type 'ros.ament_cmake' and name 'mavros_extras'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/mavros_msgs) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mavros/mavros_msgs' with type 'ros.ament_cmake' and name 'mavros_msgs'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/test_mavros) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/test_mavros) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/mavros/test_mavros) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_flight_controller_two) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_flight_controller_two' with type 'ros.ament_python' and name 'test_flight_controller_two'
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.250s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/asrl/test_flight_ws_two/install
+[0.250s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/asrl/ros2-vicon-receiver/vicon_receiver/install
+[0.251s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 262 installed packages in /opt/ros/foxy
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_target' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_clean_cache' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_clean_first' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'cmake_force_configure' from command line to 'False'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'ament_cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'catkin_cmake_args' from command line to 'None'
+[0.290s] Level 5:colcon.colcon_core.verb:set package 'libmavconn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.290s] DEBUG:colcon.colcon_core.verb:Building package 'libmavconn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asrl/test_flight_ws_two/build/libmavconn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asrl/test_flight_ws_two/install/libmavconn', 'merge_install': False, 'path': '/home/asrl/test_flight_ws_two/src/mavros/libmavconn', 'symlink_install': True, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'mavros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'mavros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asrl/test_flight_ws_two/build/mavros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asrl/test_flight_ws_two/install/mavros_msgs', 'merge_install': False, 'path': '/home/asrl/test_flight_ws_two/src/mavros/mavros_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'test_flight_controller_two' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'test_flight_controller_two' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asrl/test_flight_ws_two/build/test_flight_controller_two', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asrl/test_flight_ws_two/install/test_flight_controller_two', 'merge_install': False, 'path': '/home/asrl/test_flight_ws_two/src/test_flight_controller_two', 'symlink_install': True, 'test_result_base': None}
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_target' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_clean_first' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'cmake_force_configure' from command line to 'False'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'ament_cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.292s] Level 5:colcon.colcon_core.verb:set package 'mavros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.292s] DEBUG:colcon.colcon_core.verb:Building package 'mavros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asrl/test_flight_ws_two/build/mavros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asrl/test_flight_ws_two/install/mavros', 'merge_install': False, 'path': '/home/asrl/test_flight_ws_two/src/mavros/mavros', 'symlink_install': True, 'test_result_base': None}
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'mavros_extras' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'mavros_extras' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/asrl/test_flight_ws_two/build/mavros_extras', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/asrl/test_flight_ws_two/install/mavros_extras', 'merge_install': False, 'path': '/home/asrl/test_flight_ws_two/src/mavros/mavros_extras', 'symlink_install': True, 'test_result_base': None}
+[0.293s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.296s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.296s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asrl/test_flight_ws_two/src/mavros/libmavconn' with build type 'ament_cmake'
+[0.296s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asrl/test_flight_ws_two/src/mavros/libmavconn'
+[0.299s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.303s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asrl/test_flight_ws_two/src/mavros/mavros_msgs' with build type 'ament_cmake'
+[0.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asrl/test_flight_ws_two/src/mavros/mavros_msgs'
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.310s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two' with build type 'ament_python'
+[0.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_flight_controller_two', 'ament_prefix_path')
+[0.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/ament_prefix_path.ps1'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/ament_prefix_path.dsv'
+[0.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/ament_prefix_path.sh'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/libmavconn -- -j16 -l16
+[0.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_msgs -- -j16 -l16
+[0.486s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two'
+[0.488s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.488s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/libmavconn -- -j16 -l16
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/libmavconn
+[0.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(libmavconn)
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/libmavconn
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn' for CMake module files
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn' for CMake config files
+[0.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('libmavconn', 'cmake_prefix_path')
+[0.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.sh'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib'
+[0.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('libmavconn', 'ld_library_path_lib')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.sh'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/bin'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib/pkgconfig/libmavconn.pc'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib/python3.8/site-packages'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/bin'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.sh'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.bash'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.zsh'
+[0.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/libmavconn/share/colcon-core/packages/libmavconn)
+[0.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(libmavconn)
+[0.579s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn' for CMake module files
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('libmavconn', 'cmake_prefix_path')
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.ps1'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.dsv'
+[0.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/cmake_prefix_path.sh'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib'
+[0.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('libmavconn', 'ld_library_path_lib')
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.ps1'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/hook/ld_library_path_lib.sh'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/bin'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib/pkgconfig/libmavconn.pc'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/lib/python3.8/site-packages'
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/libmavconn/bin'
+[0.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.ps1'
+[0.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.dsv'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.sh'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.bash'
+[0.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.zsh'
+[0.586s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/libmavconn/share/colcon-core/packages/libmavconn)
+[0.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_msgs -- -j16 -l16
+[0.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data
+[1.008s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_flight_controller_two', 'pythonpath_develop')
+[1.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/build/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath_develop.ps1'
+[1.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/build/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath_develop.dsv'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/build/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath_develop.sh'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two' for CMake module files
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two' for CMake config files
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/bin'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/pkgconfig/test_flight_controller_two.pc'
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages'
+[1.013s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_flight_controller_two', 'pythonpath')
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath.ps1'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath.dsv'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/hook/pythonpath.sh'
+[1.015s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/bin'
+[1.015s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_flight_controller_two)
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/package.ps1'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/package.dsv'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/package.sh'
+[1.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/package.bash'
+[1.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/test_flight_controller_two/package.zsh'
+[1.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/test_flight_controller_two/share/colcon-core/packages/test_flight_controller_two)
+[1.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_msgs
+[1.878s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_msgs)
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs' for CMake module files
+[1.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_msgs
+[1.880s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs' for CMake config files
+[1.886s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'cmake_prefix_path')
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.ps1'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.dsv'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.sh'
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib'
+[1.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'ld_library_path_lib')
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.ps1'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.dsv'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.sh'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/bin'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/pkgconfig/mavros_msgs.pc'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages'
+[1.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'pythonpath')
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.ps1'
+[1.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.dsv'
+[1.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.sh'
+[1.891s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/bin'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.dsv'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.sh'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.bash'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.zsh'
+[1.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros_msgs/share/colcon-core/packages/mavros_msgs)
+[2.919s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_msgs)
+[2.921s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs' for CMake module files
+[2.921s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs' for CMake config files
+[2.926s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'cmake_prefix_path')
+[2.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.ps1'
+[2.928s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.dsv'
+[2.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/cmake_prefix_path.sh'
+[2.929s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib'
+[2.929s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'ld_library_path_lib')
+[2.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.ps1'
+[2.930s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.dsv'
+[2.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/ld_library_path_lib.sh'
+[2.930s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/bin'
+[2.930s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/pkgconfig/mavros_msgs.pc'
+[2.930s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages'
+[2.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_msgs', 'pythonpath')
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.ps1'
+[2.931s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.dsv'
+[2.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/hook/pythonpath.sh'
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_msgs/bin'
+[2.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.ps1'
+[2.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.dsv'
+[2.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.sh'
+[2.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.bash'
+[2.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/package.zsh'
+[2.935s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros_msgs/share/colcon-core/packages/mavros_msgs)
+[2.935s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asrl/test_flight_ws_two/src/mavros/mavros' with build type 'ament_cmake'
+[2.935s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asrl/test_flight_ws_two/src/mavros/mavros'
+[2.936s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.936s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros -- -j16 -l16
+[3.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros -- -j16 -l16
+[3.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros
+[3.340s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros)
+[3.342s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros' for CMake module files
+[3.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros
+[3.342s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros' for CMake config files
+[3.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'cmake_prefix_path')
+[3.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.ps1'
+[3.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.dsv'
+[3.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.sh'
+[3.345s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib'
+[3.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'ld_library_path_lib')
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.ps1'
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.dsv'
+[3.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.sh'
+[3.346s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/bin'
+[3.346s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib/pkgconfig/mavros.pc'
+[3.346s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages'
+[3.346s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'pythonpath')
+[3.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.ps1'
+[3.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.dsv'
+[3.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.sh'
+[3.348s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/bin'
+[3.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.ps1'
+[3.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.dsv'
+[3.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.sh'
+[3.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.bash'
+[3.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.zsh'
+[3.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros/share/colcon-core/packages/mavros)
+[3.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros)
+[3.423s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros' for CMake module files
+[3.423s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros' for CMake config files
+[3.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'cmake_prefix_path')
+[3.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.ps1'
+[3.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.dsv'
+[3.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/cmake_prefix_path.sh'
+[3.425s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib'
+[3.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'ld_library_path_lib')
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.ps1'
+[3.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.dsv'
+[3.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/ld_library_path_lib.sh'
+[3.427s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/bin'
+[3.427s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib/pkgconfig/mavros.pc'
+[3.427s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages'
+[3.427s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros', 'pythonpath')
+[3.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.ps1'
+[3.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.dsv'
+[3.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/hook/pythonpath.sh'
+[3.429s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros/bin'
+[3.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.ps1'
+[3.430s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.dsv'
+[3.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.sh'
+[3.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.bash'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.zsh'
+[3.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros/share/colcon-core/packages/mavros)
+[3.431s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/asrl/test_flight_ws_two/src/mavros/mavros_extras' with build type 'ament_cmake'
+[3.431s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/asrl/test_flight_ws_two/src/mavros/mavros_extras'
+[3.432s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.432s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_extras': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_extras -- -j16 -l16
+[3.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_extras' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_extras -- -j16 -l16
+[3.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_extras': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_extras
+[3.761s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_extras)
+[3.762s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras' for CMake module files
+[3.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_extras' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_extras
+[3.763s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras' for CMake config files
+[3.763s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_extras', 'cmake_prefix_path')
+[3.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.ps1'
+[3.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.dsv'
+[3.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.sh'
+[3.765s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib'
+[3.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_extras', 'ld_library_path_lib')
+[3.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.ps1'
+[3.766s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.dsv'
+[3.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.sh'
+[3.767s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/bin'
+[3.767s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib/pkgconfig/mavros_extras.pc'
+[3.767s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib/python3.8/site-packages'
+[3.767s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/bin'
+[3.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.ps1'
+[3.768s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.dsv'
+[3.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.sh'
+[3.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.bash'
+[3.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.zsh'
+[3.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros_extras/share/colcon-core/packages/mavros_extras)
+[3.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mavros_extras)
+[3.829s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras' for CMake module files
+[3.829s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras' for CMake config files
+[3.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_extras', 'cmake_prefix_path')
+[3.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.ps1'
+[3.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.dsv'
+[3.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/cmake_prefix_path.sh'
+[3.832s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib'
+[3.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('mavros_extras', 'ld_library_path_lib')
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.ps1'
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.dsv'
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/hook/ld_library_path_lib.sh'
+[3.833s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/bin'
+[3.833s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib/pkgconfig/mavros_extras.pc'
+[3.833s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/lib/python3.8/site-packages'
+[3.834s] Level 1:colcon.colcon_core.environment:checking '/home/asrl/test_flight_ws_two/install/mavros_extras/bin'
+[3.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.ps1'
+[3.835s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.dsv'
+[3.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.sh'
+[3.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.bash'
+[3.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.zsh'
+[3.836s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/asrl/test_flight_ws_two/install/mavros_extras/share/colcon-core/packages/mavros_extras)
+[3.836s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.836s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.836s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.836s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.841s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.841s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.841s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.850s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.851s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asrl/test_flight_ws_two/install/local_setup.ps1'
+[3.852s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asrl/test_flight_ws_two/install/_local_setup_util_ps1.py'
+[3.852s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asrl/test_flight_ws_two/install/setup.ps1'
+[3.853s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asrl/test_flight_ws_two/install/local_setup.sh'
+[3.854s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/asrl/test_flight_ws_two/install/_local_setup_util_sh.py'
+[3.854s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asrl/test_flight_ws_two/install/setup.sh'
+[3.855s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asrl/test_flight_ws_two/install/local_setup.bash'
+[3.855s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asrl/test_flight_ws_two/install/setup.bash'
+[3.856s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/asrl/test_flight_ws_two/install/local_setup.zsh'
+[3.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/asrl/test_flight_ws_two/install/setup.zsh'

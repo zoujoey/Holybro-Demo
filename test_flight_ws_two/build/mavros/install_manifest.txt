@@ -1,0 +1,3 @@
+/home/asrl/test_flight_ws_two/install/mavros/lib/libmavros.so
+/home/asrl/test_flight_ws_two/install/mavros/lib/mavros/mavros_node
+/home/asrl/test_flight_ws_two/install/mavros/lib/libmavros_plugins.so

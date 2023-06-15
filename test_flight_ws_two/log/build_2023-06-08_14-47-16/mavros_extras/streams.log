@@ -1,0 +1,123 @@
+[0.014s] Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_extras': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake /home/asrl/test_flight_ws_two/src/mavros/mavros_extras -DCMAKE_INSTALL_PREFIX=/home/asrl/test_flight_ws_two/install/mavros_extras
+[0.023s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.039s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.195s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.203s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.227s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.229s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.304s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.334s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.336s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.426s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.461s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[0.472s] -- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+[0.474s] -- Found mavros: 2.5.0 (/home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake)
+[0.477s] -- Found libmavconn: 2.5.0 (/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake)
+[0.480s] -- Found yaml_cpp_vendor: 7.0.3 (/opt/ros/foxy/share/yaml_cpp_vendor/cmake)
+[0.480s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[0.481s] -- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+[0.482s] -- Found eigen_stl_containers: 1.0.0 (/opt/ros/foxy/share/eigen_stl_containers/cmake)
+[0.483s] -- Found tf2_eigen: 0.13.14 (/opt/ros/foxy/share/tf2_eigen/cmake)
+[0.679s] -- Found urdf: 2.4.0 (/opt/ros/foxy/share/urdf/cmake)
+[0.691s] -- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+[0.713s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[0.724s] -- Found geographic_msgs: 1.0.4 (/opt/ros/foxy/share/geographic_msgs/cmake)
+[0.778s] -- Found mavros_msgs: 2.5.0 (/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/cmake)
+[0.998s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.041s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.048s] -- Found trajectory_msgs: 2.0.5 (/opt/ros/foxy/share/trajectory_msgs/cmake)
+[1.092s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[1.147s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.147s] -- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)
+[1.147s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.208s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.208s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/asrl/test_flight_ws_two/src/mavros/mavros_extras/include>
+[1.208s] -- Configured cppcheck exclude dirs and/or files: 
+[1.209s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.209s] -- Configured cpplint exclude dirs and/or files: 
+[1.210s] -- Added test 'lint_cmake' to check CMake code style
+[1.211s] -- Added test 'uncrustify' to check C / C++ code style
+[1.211s] -- Configured uncrustify additional arguments: 
+[1.211s] -- Added test 'xmllint' to check XML markup files
+[1.215s] -- Configuring done
+[1.244s] -- Generating done
+[1.246s] -- Build files have been written to: /home/asrl/test_flight_ws_two/build/mavros_extras
+[1.254s] Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_extras' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake /home/asrl/test_flight_ws_two/src/mavros/mavros_extras -DCMAKE_INSTALL_PREFIX=/home/asrl/test_flight_ws_two/install/mavros_extras
+[1.254s] Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_extras': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_extras -- -j16 -l16
+[1.295s] [  5%] Built target servo_state_publisher
+[1.299s] [ 10%] Built target mavros_extras
+[1.377s] [35m[1mScanning dependencies of target mavros_extras_plugins[0m
+[1.703s] [ 12%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/3dr_radio.cpp.o[0m
+[1.704s] [ 15%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/cam_imu_sync.cpp.o[0m
+[1.704s] [ 17%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/adsb.cpp.o[0m
+[1.705s] [ 20%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/camera.cpp.o[0m
+[1.705s] [ 22%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/cellular_status.cpp.o[0m
+[1.706s] [ 25%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/companion_process_status.cpp.o[0m
+[1.708s] [ 27%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/debug_value.cpp.o[0m
+[1.708s] [ 30%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/distance_sensor.cpp.o[0m
+[1.709s] [ 32%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/esc_status.cpp.o[0m
+[1.710s] [ 35%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/esc_telemetry.cpp.o[0m
+[1.711s] [ 37%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/fake_gps.cpp.o[0m
+[1.712s] [ 40%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/gps_input.cpp.o[0m
+[1.712s] [ 42%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/gps_rtk.cpp.o[0m
+[1.713s] [ 45%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/gps_status.cpp.o[0m
+[1.714s] [ 47%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/guided_target.cpp.o[0m
+[1.715s] [ 50%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/hil.cpp.o[0m
+[10.897s] [ 52%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/landing_target.cpp.o[0m
+[11.090s] [ 55%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/log_transfer.cpp.o[0m
+[11.440s] [ 57%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/mag_calibration_status.cpp.o[0m
+[11.483s] [ 60%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/mocap_pose_estimate.cpp.o[0m
+[11.705s] [ 62%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/mount_control.cpp.o[0m
+[12.216s] [ 65%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/obstacle_distance.cpp.o[0m
+[13.059s] [ 67%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/odom.cpp.o[0m
+[13.337s] [ 70%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/onboard_computer_status.cpp.o[0m
+[13.514s] [ 72%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/play_tune.cpp.o[0m
+[13.530s] [ 75%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/px4flow.cpp.o[0m
+[14.634s] [ 77%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/rangefinder.cpp.o[0m
+[14.686s] [ 80%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/terrain.cpp.o[0m
+[17.370s] [ 82%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/trajectory.cpp.o[0m
+[17.408s] [ 85%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/tunnel.cpp.o[0m
+[20.603s] [ 87%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/vfr_hud.cpp.o[0m
+[20.898s] [ 90%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/vibration.cpp.o[0m
+[22.067s] [ 92%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/vision_pose_estimate.cpp.o[0m
+[23.488s] [ 95%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/vision_speed_estimate.cpp.o[0m
+[23.526s] [ 97%] [32mBuilding CXX object CMakeFiles/mavros_extras_plugins.dir/src/plugins/wheel_odometry.cpp.o[0m
+[33.120s] [100%] [32m[1mLinking CXX shared library libmavros_extras_plugins.so[0m
+[38.622s] [100%] Built target mavros_extras_plugins
+[38.630s] Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_extras' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/mavros_extras -- -j16 -l16
+[38.709s] Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_extras': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_extras
+[38.715s] -- Install configuration: ""
+[38.715s] -- Execute custom install script
+[38.715s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras//mavros_plugins.xml
+[38.716s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/lib/mavros_extras/servo_state_publisher
+[38.717s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/include/mavros_extras/servo_state_publisher.hpp
+[38.717s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/launch/px4flow.launch
+[38.717s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/launch/px4flow_config.yaml
+[38.718s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/launch/px4flow_pluginlists.yaml
+[38.718s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/launch/servo_state_publisher.yaml
+[38.718s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/library_path.sh
+[38.718s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/library_path.dsv
+[38.718s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/ament_index/resource_index/package_run_dependencies/mavros_extras
+[38.719s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/ament_index/resource_index/parent_prefix_path/mavros_extras
+[38.719s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/ament_prefix_path.sh
+[38.719s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/ament_prefix_path.dsv
+[38.719s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/path.sh
+[38.720s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/environment/path.dsv
+[38.720s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/local_setup.bash
+[38.720s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/local_setup.sh
+[38.720s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/local_setup.zsh
+[38.720s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/local_setup.dsv
+[38.721s] -- Symlinking: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.dsv
+[38.727s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/ament_index/resource_index/packages/mavros_extras
+[38.727s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/ament_index/resource_index/mavros__pluginlib__plugin/mavros_extras
+[38.727s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/ament_index/resource_index/rclcpp_components/mavros_extras
+[38.728s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/cmake/ament_cmake_export_include_directories-extras.cmake
+[38.728s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/cmake/ament_cmake_export_libraries-extras.cmake
+[38.728s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/cmake/ament_cmake_export_dependencies-extras.cmake
+[38.728s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig.cmake
+[38.728s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/cmake/mavros_extrasConfig-version.cmake
+[38.729s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros_extras/share/mavros_extras/package.xml
+[38.729s] -- Up-to-date: /home/asrl/test_flight_ws_two/install/mavros_extras/lib/libmavros_extras.so
+[38.730s] -- Installing: /home/asrl/test_flight_ws_two/install/mavros_extras/lib/libmavros_extras_plugins.so
+[38.768s] -- Set runtime path of "/home/asrl/test_flight_ws_two/install/mavros_extras/lib/libmavros_extras_plugins.so" to ""
+[38.771s] Invoked command in '/home/asrl/test_flight_ws_two/build/mavros_extras' returned '0': CMAKE_PREFIX_PATH=/home/asrl/test_flight_ws_two/install/mavros:/home/asrl/test_flight_ws_two/install/mavros_msgs:/home/asrl/test_flight_ws_two/install/libmavconn:/home/asrl/test_flight_ws_two/install/mavros_extras:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy LD_LIBRARY_PATH=/home/asrl/test_flight_ws_two/install/mavros/lib:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib:/home/asrl/test_flight_ws_two/install/libmavconn/lib:/home/asrl/test_flight_ws_two/install/mavros_extras/lib:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages:/home/asrl/test_flight_ws_two/build/test_flight_controller_two:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:/home/asrl/ros2-vicon-receiver/vicon_receiver/install/vicon_receiver/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/duembgen/.local/bin/ /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/mavros_extras

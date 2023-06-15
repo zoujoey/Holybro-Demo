@@ -1,0 +1,205 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+-- Found message_filters: 3.2.5 (/opt/ros/foxy/share/message_filters/cmake)
+-- Found libmavconn: 2.5.0 (/home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+-- Found eigen_stl_containers: 1.0.0 (/opt/ros/foxy/share/eigen_stl_containers/cmake)
+-- Found tf2_eigen: 0.13.14 (/opt/ros/foxy/share/tf2_eigen/cmake)
+-- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+-- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+-- Found geographic_msgs: 1.0.4 (/opt/ros/foxy/share/geographic_msgs/cmake)
+-- Found mavros_msgs: 2.5.0 (/home/asrl/test_flight_ws_two/install/mavros_msgs/share/mavros_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+-- Found trajectory_msgs: 2.0.5 (/opt/ros/foxy/share/trajectory_msgs/cmake)
+-- Geoid model datasets found in: /usr/share/GeographicLib/geoid
+-- Gravity Field model datasets found in: /usr/share/GeographicLib/gravity
+-- Magnetic Field model datasets found in: /usr/share/GeographicLib/magnetic
+-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+-- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)
+-- Found ament_cmake_pytest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_pytest/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/asrl/test_flight_ws_two/src/mavros/mavros/include>
+-- Configured cppcheck exclude dirs and/or files: ./test/*.cpp
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/asrl/test_flight_ws_two/build/mavros
+[  6%] Built target gtest
+[  6%] Built target gtest_main
+[ 11%] Built target gmock
+[ 14%] Built target gmock_main
+[35m[1mScanning dependencies of target mavros[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_sensor_orientation.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/enum_to_string.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_router.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/mavros_uas.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/plugin.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_ap.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_data.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_stringify.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_executor.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_tf.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/mavros.dir/src/lib/uas_timesync.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libmavros.so[0m
+[ 37%] Built target mavros
+[35m[1mScanning dependencies of target libmavros-sensor-orientation-test[0m
+[35m[1mScanning dependencies of target mavros_node[0m
+[35m[1mScanning dependencies of target mavros-router-test[0m
+[35m[1mScanning dependencies of target mavros-uas-test[0m
+[ 38%] [32m[1mLinking CXX executable libmavros-quaternion-utils-test[0m
+[ 40%] [32m[1mLinking CXX executable libmavros-frame-conversions-test[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/libmavros-sensor-orientation-test.dir/test/test_sensor_orientation.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/mavros-router-test.dir/test/test_router.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/mavros_node.dir/src/mavros_node.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/mavros-uas-test.dir/test/test_uas.cpp.o[0m
+[35m[1mScanning dependencies of target mavros_plugins[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/actuator_control.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/altitude.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/command.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/dummy.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/ftp.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/geofence.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/global_position.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/local_position.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/home_position.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/imu.cpp.o[0m
+[ 64%] Built target libmavros-frame-conversions-test
+[ 66%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/manual_control.cpp.o[0m
+[ 67%] Built target libmavros-quaternion-utils-test
+[ 69%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/mission_protocol_base.cpp.o[0m
+[ 70%] [32m[1mLinking CXX executable libmavros-sensor-orientation-test[0m
+[ 70%] Built target libmavros-sensor-orientation-test
+[ 72%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/nav_controller_output.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/param.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/rallypoint.cpp.o[0m
+[ 77%] [32m[1mLinking CXX executable mavros_node[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/rc_io.cpp.o[0m
+[ 79%] Built target mavros_node
+[ 80%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_accel.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_attitude.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_position.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable mavros-router-test[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_raw.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_trajectory.cpp.o[0m
+[ 88%] Built target mavros-router-test
+[ 90%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/setpoint_velocity.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_status.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/sys_time.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable mavros-uas-test[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/waypoint.cpp.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/mavros_plugins.dir/src/plugins/wind_estimation.cpp.o[0m
+[ 98%] Built target mavros-uas-test
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:[m[K In member function ‘[01m[Kvoid mavros::std_plugins::SystemStatusPlugin::process_autopilot_version_normal(mavlink::common::msg::AUTOPILOT_VERSION&, uint8_t, uint8_t)[m[K’:
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:759:36:[m[K [01;35m[Kwarning: [m[Klambda templates are only available with ‘[01m[K-std=c++2a[m[K’ or ‘[01m[K-std=gnu++2a[m[K’ [[01;35m[K-Wpedantic[m[K]
+  759 |     auto log_info = [&lg, &prefix] [01;35m[K<[m[K typename ... Args > (const std::string & fmt, Args ... args) {
+      |                                    [01;35m[K^[m[K
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:[m[K In member function ‘[01m[Kvoid mavros::std_plugins::SystemStatusPlugin::process_autopilot_version_apm_quirk(mavlink::common::msg::AUTOPILOT_VERSION&, uint8_t, uint8_t)[m[K’:
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:787:36:[m[K [01;35m[Kwarning: [m[Klambda templates are only available with ‘[01m[K-std=c++2a[m[K’ or ‘[01m[K-std=gnu++2a[m[K’ [[01;35m[K-Wpedantic[m[K]
+  787 |     auto log_info = [&lg, &prefix] [01;35m[K<[m[K typename ... Args > (const std::string & fmt, Args ... args) {
+      |                                    [01;35m[K^[m[K
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:[m[K In member function ‘[01m[Kvoid mavros::std_plugins::SystemStatusPlugin::handle_battery_status(const mavlink_message_t*, mavlink::common::msg::BATTERY_STATUS&, mavros::plugin::filter::SystemAndOk)[m[K’:
+[01m[K/home/asrl/test_flight_ws_two/src/mavros/mavros/src/plugins/sys_status.cpp:1111:32:[m[K [01;35m[Kwarning: [m[Kcomparison is always true due to limited range of data type [[01;35m[K-Wtype-limits[m[K]
+ 1111 |     if (!disable_diag && [01;35m[Kbs.id >= 0[m[K && bs.id < MAX_NR_BATTERY_STATUS) {
+      |                          [01;35m[K~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX shared library libmavros_plugins.so[0m
+[100%] Built target mavros_plugins
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros//mavros_plugins.xml
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/pythonpath.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/__init__.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/base.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/__init__.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/__main__.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/checkid.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/cmd.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/ftp.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/mission.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/param.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/safety.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/system.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd/utils.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/command.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/ftp.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/global_position.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/local_position.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/mavlink.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/mission.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/nuttx_crc32.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/param.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/setpoint.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/system.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/utils.py
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/mavros/mav
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/lib/mavros/install_geographiclib_datasets.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/frame_tf.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/mavros_plugin_register_macro.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/mavros_router.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/mavros_uas.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/mission_protocol_base.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/plugin.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/plugin_filter.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/px4_custom_mode.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/setpoint_mixin.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/uas_executor.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/include/mavros/utils.hpp
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/apm.launch
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/apm_config.yaml
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/apm_pluginlists.yaml
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/multi_uas.launch
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/node.launch
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/px4.launch
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/px4_config.yaml
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/launch/px4_pluginlists.yaml
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/library_path.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/library_path.dsv
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/ament_index/resource_index/package_run_dependencies/mavros
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/ament_index/resource_index/parent_prefix_path/mavros
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/path.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/environment/path.dsv
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/local_setup.bash
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/local_setup.sh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/local_setup.zsh
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/local_setup.dsv
+-- Symlinking: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.dsv
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/ament_index/resource_index/packages/mavros
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/ament_index/resource_index/mavros__pluginlib__plugin/mavros
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/ament_index/resource_index/rclcpp_components/mavros
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake/mavrosConfig.cmake
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/cmake/mavrosConfig-version.cmake
+-- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/mavros/share/mavros/package.xml
+Listing '/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros'...
+Listing '/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages/mavros/cmd'...
+-- Installing: /home/asrl/test_flight_ws_two/install/mavros/lib/libmavros.so
+-- Set runtime path of "/home/asrl/test_flight_ws_two/install/mavros/lib/libmavros.so" to ""
+-- Installing: /home/asrl/test_flight_ws_two/install/mavros/lib/mavros/mavros_node
+-- Set runtime path of "/home/asrl/test_flight_ws_two/install/mavros/lib/mavros/mavros_node" to ""
+-- Installing: /home/asrl/test_flight_ws_two/install/mavros/lib/libmavros_plugins.so
+-- Set runtime path of "/home/asrl/test_flight_ws_two/install/mavros/lib/libmavros_plugins.so" to ""

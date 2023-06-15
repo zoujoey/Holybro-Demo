@@ -1,0 +1,1 @@
+Invoking command in '/home/asrl/test_flight_ws_two/build/mavros_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/asrl/test_flight_ws_two/src/mavros/mavros_msgs -DCMAKE_INSTALL_PREFIX=/home/asrl/test_flight_ws_two/install/mavros_msgs

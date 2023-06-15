@@ -1,0 +1,77 @@
+[0.025s] Invoking command in '/home/asrl/test_flight_ws_two/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake /home/asrl/test_flight_ws_two/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/home/asrl/test_flight_ws_two/install/libmavconn
+[0.039s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.056s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.169s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.414s] -- Copy mavlink_dialect.hpp to source tree
+[0.416s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[0.417s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.462s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.474s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.474s] -- Configured cppcheck include dirs: /home/asrl/test_flight_ws_two/src/mavros/libmavconn/include
+[0.474s] -- Configured cppcheck exclude dirs and/or files: 
+[0.475s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.475s] -- Configured cpplint exclude dirs and/or files: 
+[0.476s] -- Added test 'lint_cmake' to check CMake code style
+[0.478s] -- Added test 'uncrustify' to check C / C++ code style
+[0.478s] -- Configured uncrustify additional arguments: 
+[0.478s] -- Added test 'xmllint' to check XML markup files
+[0.483s] -- Configuring done
+[0.491s] -- Generating done
+[0.492s] -- Build files have been written to: /home/asrl/test_flight_ws_two/build/libmavconn
+[0.495s] Invoked command in '/home/asrl/test_flight_ws_two/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake /home/asrl/test_flight_ws_two/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/home/asrl/test_flight_ws_two/install/libmavconn
+[0.497s] Invoking command in '/home/asrl/test_flight_ws_two/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/libmavconn -- -j16 -l16
+[0.527s] [35m[1mScanning dependencies of target mavconn[0m
+[0.530s] [ 16%] Built target gtest_main
+[0.531s] [ 33%] Built target gtest
+[0.557s] [ 58%] [32mBuilding CXX object CMakeFiles/mavconn.dir/src/serial.cpp.o[0m
+[0.557s] [ 58%] [32mBuilding CXX object CMakeFiles/mavconn.dir/src/tcp.cpp.o[0m
+[0.557s] [ 58%] [32mBuilding CXX object CMakeFiles/mavconn.dir/generated/src/mavlink_helpers.cpp.o[0m
+[0.558s] [ 66%] [32mBuilding CXX object CMakeFiles/mavconn.dir/src/udp.cpp.o[0m
+[0.558s] [ 75%] [32mBuilding CXX object CMakeFiles/mavconn.dir/src/interface.cpp.o[0m
+[3.548s] [ 83%] [32m[1mLinking CXX shared library libmavconn.so[0m
+[3.658s] [ 83%] Built target mavconn
+[3.666s] [35m[1mScanning dependencies of target test_mavconn[0m
+[3.682s] [ 91%] [32mBuilding CXX object CMakeFiles/test_mavconn.dir/test/test_mavconn.cpp.o[0m
+[6.109s] [100%] [32m[1mLinking CXX executable test_mavconn[0m
+[6.202s] [100%] Built target test_mavconn
+[6.210s] Invoked command in '/home/asrl/test_flight_ws_two/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --build /home/asrl/test_flight_ws_two/build/libmavconn -- -j16 -l16
+[6.238s] Invoking command in '/home/asrl/test_flight_ws_two/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/libmavconn
+[6.243s] -- Install configuration: ""
+[6.243s] -- Execute custom install script
+[6.244s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/lib/libmavconn.so
+[6.244s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/console_bridge_compat.hpp
+[6.244s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/interface.hpp
+[6.244s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/mavlink_dialect.hpp
+[6.244s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/mavlink_dialect.hpp.em
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/msgbuffer.hpp
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/serial.hpp
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/tcp.hpp
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/thread_utils.hpp
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/udp.hpp
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/Modules/CheckGeographicLibDatasets.cmake
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/Modules/FindASIO.cmake
+[6.245s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/Modules/em_expand.cmake
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/library_path.sh
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/library_path.dsv
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/ament_index/resource_index/package_run_dependencies/libmavconn
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/ament_index/resource_index/parent_prefix_path/libmavconn
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/ament_prefix_path.sh
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/ament_prefix_path.dsv
+[6.246s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/path.sh
+[6.247s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/environment/path.dsv
+[6.247s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/local_setup.bash
+[6.247s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/local_setup.sh
+[6.247s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/local_setup.zsh
+[6.247s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/local_setup.dsv
+[6.247s] -- Symlinking: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.dsv
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/ament_index/resource_index/packages/libmavconn
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_libraries-extras.cmake
+[6.253s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/libmavconnConfig.cmake
+[6.254s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/cmake/libmavconnConfig-version.cmake
+[6.254s] -- Up-to-date symlink: /home/asrl/test_flight_ws_two/install/libmavconn/share/libmavconn/package.xml
+[6.254s] -- Up-to-date: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn
+[6.254s] -- Up-to-date: /home/asrl/test_flight_ws_two/install/libmavconn/include/mavconn/mavlink_dialect.hpp
+[6.257s] Invoked command in '/home/asrl/test_flight_ws_two/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/asrl/test_flight_ws_two/install/test_flight_controller_two:/opt/ros/foxy /usr/bin/cmake --install /home/asrl/test_flight_ws_two/build/libmavconn

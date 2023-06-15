@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages",
+        "/home/duembgen/.local/bin/"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws_two/install/mavros/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws_two/install/mavros_msgs/lib/python3.8/site-packages",
+        "/home/duembgen/.local/bin/"
+    ]
+}

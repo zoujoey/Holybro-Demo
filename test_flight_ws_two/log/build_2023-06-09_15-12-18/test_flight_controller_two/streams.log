@@ -1,0 +1,24 @@
+[0.431s] Invoking command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build
+[0.608s] running develop
+[0.725s] Invoked command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build
+[0.727s] Invoking command in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_two build --build-base /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build install --record /home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log --single-version-externally-managed
+[0.895s] running egg_info
+[0.898s] writing manifest file '../../build/test_flight_controller_two/test_flight_controller_two.egg-info/SOURCES.txt'
+[0.899s] running build
+[0.899s] running build_py
+[0.899s] copying test_flight_controller_two/pose_pub_dum.py -> /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.899s] copying test_flight_controller_two/pose_pub_dummy.py -> /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.899s] copying test_flight_controller_two/pose_pub.py -> /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.899s] running install
+[0.899s] running install_lib
+[0.900s] creating /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two
+[0.900s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/pose_pub_dum.py to pose_pub_dum.cpython-38.pyc
+[0.901s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/pose_pub_dummy.py to pose_pub_dummy.cpython-38.pyc
+[0.901s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/__init__.py to __init__.cpython-38.pyc
+[0.901s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/pose_pub.py to pose_pub.cpython-38.pyc
+[0.901s] running install_data
+[0.902s] running install_egg_info
+[0.903s] Copying ../../build/test_flight_controller_two/test_flight_controller_two.egg-info to /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two-0.0.0-py3.8.egg-info
+[0.903s] running install_scripts
+[0.917s] writing list of installed files to '/home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log'
+[0.933s] Invoked command in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_two build --build-base /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build install --record /home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log --single-version-externally-managed

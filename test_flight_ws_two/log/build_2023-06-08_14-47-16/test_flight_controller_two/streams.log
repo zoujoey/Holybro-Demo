@@ -1,0 +1,28 @@
+[0.417s] Invoking command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build
+[0.549s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.549s]   warnings.warn(
+[0.577s] running develop
+[0.685s] Invoked command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build
+[0.687s] Invoking command in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_two build --build-base /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build install --record /home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log --install-scripts $base/lib/test_flight_controller_two --single-version-externally-managed
+[0.826s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.826s]   warnings.warn(
+[0.845s] running egg_info
+[0.849s] writing manifest file '../../build/test_flight_controller_two/test_flight_controller_two.egg-info/SOURCES.txt'
+[0.849s] running build
+[0.849s] running build_py
+[0.849s] creating /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build
+[0.849s] creating /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib
+[0.849s] creating /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.849s] copying test_flight_controller_two/__init__.py -> /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.849s] copying test_flight_controller_two/pose_pub.py -> /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build/lib/test_flight_controller_two
+[0.850s] running install
+[0.850s] running install_lib
+[0.850s] creating /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two
+[0.851s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/__init__.py to __init__.cpython-38.pyc
+[0.851s] byte-compiling /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two/pose_pub.py to pose_pub.cpython-38.pyc
+[0.851s] running install_data
+[0.852s] running install_egg_info
+[0.852s] Copying ../../build/test_flight_controller_two/test_flight_controller_two.egg-info to /home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages/test_flight_controller_two-0.0.0-py3.8.egg-info
+[0.853s] running install_scripts
+[0.867s] writing list of installed files to '/home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log'
+[0.884s] Invoked command in '/home/asrl/test_flight_ws_two/src/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_two build --build-base /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build install --record /home/asrl/test_flight_ws_two/build/test_flight_controller_two/install.log --install-scripts $base/lib/test_flight_controller_two --single-version-externally-managed
