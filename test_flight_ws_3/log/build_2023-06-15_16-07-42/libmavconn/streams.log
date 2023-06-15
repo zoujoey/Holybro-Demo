@@ -1,0 +1,46 @@
+[0.022s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller /usr/bin/cmake --build /home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn -- -j16 -l16
+[0.191s] [ 16%] Built target gtest_main
+[0.191s] [ 33%] Built target gtest
+[0.191s] [ 83%] Built target mavconn
+[0.191s] [100%] Built target test_mavconn
+[0.193s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller /usr/bin/cmake --build /home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn -- -j16 -l16
+[0.219s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller /usr/bin/cmake --install /home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn
+[0.223s] -- Install configuration: ""
+[0.224s] -- Execute custom install script
+[0.224s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib/libmavconn.so
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/console_bridge_compat.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/interface.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp.em
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/msgbuffer.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/serial.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/tcp.hpp
+[0.225s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/thread_utils.hpp
+[0.226s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/udp.hpp
+[0.226s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/CheckGeographicLibDatasets.cmake
+[0.226s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/FindASIO.cmake
+[0.226s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/em_expand.cmake
+[0.227s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/library_path.sh
+[0.227s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/library_path.dsv
+[0.227s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/package_run_dependencies/libmavconn
+[0.227s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/parent_prefix_path/libmavconn
+[0.227s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/ament_prefix_path.sh
+[0.228s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/ament_prefix_path.dsv
+[0.228s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/path.sh
+[0.228s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/path.dsv
+[0.228s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.bash
+[0.228s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.sh
+[0.229s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.zsh
+[0.229s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.dsv
+[0.229s] -- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/package.dsv
+[0.234s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/packages/libmavconn
+[0.234s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_libraries-extras.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconnConfig.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconnConfig-version.cmake
+[0.235s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/package.xml
+[0.236s] -- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn
+[0.236s] -- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp
+[0.238s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller /usr/bin/cmake --install /home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn

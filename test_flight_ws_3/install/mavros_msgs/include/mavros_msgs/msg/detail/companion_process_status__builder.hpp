@@ -1,0 +1,1 @@
+/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs/rosidl_generator_cpp/mavros_msgs/msg/detail/companion_process_status__builder.hpp

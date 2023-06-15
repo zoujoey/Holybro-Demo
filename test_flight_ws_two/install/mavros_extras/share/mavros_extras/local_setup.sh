@@ -1,1 +1,0 @@
-/home/asrl/test_flight_ws_two/build/mavros_extras/ament_cmake_environment_hooks/local_setup.sh

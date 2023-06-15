@@ -1,0 +1,14 @@
+[0.409s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/build --no-deps install_data
+[0.539s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.539s]   warnings.warn(
+[0.567s] running develop
+[0.647s] running egg_info
+[0.647s] creating test_flight_controller_three.egg-info
+[0.648s] writing manifest file 'test_flight_controller_three.egg-info/SOURCES.txt'
+[0.650s] writing manifest file 'test_flight_controller_three.egg-info/SOURCES.txt'
+[0.670s] running build_ext
+[0.671s] running install_data
+[0.671s] copying resource/test_flight_controller_three -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/ament_index/resource_index/packages
+[0.671s] creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/test_flight_controller_three
+[0.671s] copying package.xml -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/test_flight_controller_three
+[0.689s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/build --no-deps install_data

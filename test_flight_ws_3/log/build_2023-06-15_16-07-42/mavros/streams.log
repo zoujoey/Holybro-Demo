@@ -1,0 +1,92 @@
+[0.009s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros': AMENT_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller LD_LIBRARY_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros -- -j16 -l16
+[0.042s] [ 12%] Built target gtest_main
+[0.042s] [ 12%] Built target gtest
+[0.042s] [ 14%] Built target gmock_main
+[0.042s] [ 14%] Built target gmock
+[0.110s] [ 37%] Built target mavros
+[0.137s] [ 40%] Built target libmavros-quaternion-utils-test
+[0.139s] [ 43%] Built target libmavros-frame-conversions-test
+[0.143s] [ 46%] Built target libmavros-sensor-orientation-test
+[0.144s] [ 51%] Built target mavros-router-test
+[0.144s] [ 53%] Built target mavros_node
+[0.144s] [ 56%] Built target mavros-uas-test
+[0.281s] [100%] Built target mavros_plugins
+[0.289s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros' returned '0': AMENT_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller LD_LIBRARY_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros -- -j16 -l16
+[0.350s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros': AMENT_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller LD_LIBRARY_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros
+[0.364s] -- Install configuration: ""
+[0.365s] -- Execute custom install script
+[0.365s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros//mavros_plugins.xml
+[0.365s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/pythonpath.sh
+[0.365s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/pythonpath.dsv
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/__init__.py
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/base.py
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/__init__.py
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/__main__.py
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/checkid.py
+[0.366s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/cmd.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/ftp.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/mission.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/param.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/safety.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/system.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd/utils.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/command.py
+[0.367s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/ftp.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/global_position.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/local_position.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/mavlink.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/mission.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/nuttx_crc32.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/param.py
+[0.368s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/setpoint.py
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/system.py
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/utils.py
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/mavros/mav
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/mavros/install_geographiclib_datasets.sh
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/frame_tf.hpp
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/mavros_plugin_register_macro.hpp
+[0.369s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/mavros_router.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/mavros_uas.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/mission_protocol_base.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/plugin.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/plugin_filter.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/px4_custom_mode.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/setpoint_mixin.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/uas_executor.hpp
+[0.370s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/include/mavros/utils.hpp
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/apm.launch
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/apm_config.yaml
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/apm_pluginlists.yaml
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/multi_uas.launch
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/node.launch
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/px4.launch
+[0.371s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/px4_config.yaml
+[0.372s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/launch/px4_pluginlists.yaml
+[0.372s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/library_path.sh
+[0.372s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/library_path.dsv
+[0.372s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/ament_index/resource_index/package_run_dependencies/mavros
+[0.372s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/ament_index/resource_index/parent_prefix_path/mavros
+[0.373s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/ament_prefix_path.sh
+[0.373s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/ament_prefix_path.dsv
+[0.373s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/path.sh
+[0.373s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/environment/path.dsv
+[0.373s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/local_setup.bash
+[0.374s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/local_setup.sh
+[0.374s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/local_setup.zsh
+[0.374s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/local_setup.dsv
+[0.374s] -- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/package.dsv
+[0.380s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/ament_index/resource_index/packages/mavros
+[0.380s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/ament_index/resource_index/mavros__pluginlib__plugin/mavros
+[0.380s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/ament_index/resource_index/rclcpp_components/mavros
+[0.380s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.380s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/cmake/ament_cmake_export_libraries-extras.cmake
+[0.381s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.381s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/cmake/mavrosConfig.cmake
+[0.381s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/cmake/mavrosConfig-version.cmake
+[0.381s] -- Up-to-date symlink: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/share/mavros/package.xml
+[0.402s] Listing '/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros'...
+[0.402s] Listing '/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/python3.8/site-packages/mavros/cmd'...
+[0.404s] -- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/libmavros.so
+[0.405s] -- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/mavros/mavros_node
+[0.405s] -- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/libmavros_plugins.so
+[0.408s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros' returned '0': AMENT_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn:/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller LD_LIBRARY_PATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib:/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros

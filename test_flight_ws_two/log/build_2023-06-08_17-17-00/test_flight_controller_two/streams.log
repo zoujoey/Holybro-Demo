@@ -1,9 +1,0 @@
-[0.420s] Invoking command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data
-[0.556s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
-[0.556s]   warnings.warn(
-[0.583s] running develop
-[0.666s] running egg_info
-[0.668s] writing manifest file 'test_flight_controller_two.egg-info/SOURCES.txt'
-[0.688s] running build_ext
-[0.689s] running install_data
-[0.706s] Invoked command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data

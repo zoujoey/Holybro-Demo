@@ -1,7 +1,0 @@
-[0.437s] Invoking command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data
-[0.603s] running develop
-[0.700s] running egg_info
-[0.702s] writing manifest file 'test_flight_controller_two.egg-info/SOURCES.txt'
-[0.723s] running build_ext
-[0.724s] running install_data
-[0.744s] Invoked command in '/home/asrl/test_flight_ws_two/build/test_flight_controller_two' returned '0': PYTHONPATH=/home/asrl/test_flight_ws_two/build/test_flight_controller_two/prefix_override:/home/asrl/test_flight_ws_two/install/test_flight_controller_two/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/test_flight_ws_two/build/test_flight_controller_two/build --no-deps install_data

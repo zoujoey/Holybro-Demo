@@ -1,0 +1,234 @@
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/opt/ros/foxy/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>
+  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 23, in <module>
+Traceback (most recent call last):
+  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 23, in <module>
+  File "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>
+  File "/opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>
+make[2]: *** Deleting file 'rosidl_typesupport_c/mavros_msgs/msg/adsb_vehicle__type_support.cpp'
+make[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_cpp.hpp'
+make[2]: *** Deleting file 'rosidl_typesupport_introspection_c/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_c.h'
+make[2]: *** Deleting file 'rosidl_typesupport_cpp/mavros_msgs/msg/adsb_vehicle__type_support.cpp'
+make[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/mavros_msgs/msg/detail/dds_fastrtps/adsb_vehicle__type_support.cpp'
+    sys.exit(main())
+    sys.exit(main())
+  File "/opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main
+    sys.exit(main())
+  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 19, in main
+    sys.exit(main())
+  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 19, in main
+  File "/opt/ros/foxy/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main
+    sys.exit(main())
+  File "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main
+    return generate_cpp(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp
+    return generate_cpp(args.generator_arguments_file)
+    return generate_c(args.generator_arguments_file)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 24, in generate_cpp
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py", line 24, in generate_c
+    return generate_cpp(args.generator_arguments_file)
+    return generate_c(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c
+    generate_files(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+    generate_files(generator_arguments_file, mapping)
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    expand_template(
+    generate_files(
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    expand_template(
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 149, in expand_template
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    interpreter.string(template_content, template_path, locals=data)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+    content = parse_idl_string(string, png_file=png_file)
+    interpreter.string(template_content, template_path, locals=data)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    content = parse_idl_string(string, png_file=png_file)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse
+    return _parser.parse(idl_string)
+    tree = get_ast_from_idl_string(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string
+    return _parser.parse(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse
+    return self.parser.parse(text, start=start)
+    return self.parser.parse(text, start=start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse
+    return self._parse(text, start)
+    return self._parse(text, start)
+    return self._parse(text, start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+    return self.parser.parse(input, start, *args)
+    return self.parser.parse(input, start, *args)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    to_scan = self._parse(stream, columns, to_scan, start_symbol)
+    to_scan = self._parse(stream, columns, to_scan, start_symbol)
+    to_scan = self._parse(stream, columns, to_scan, start_symbol)
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 137, in _parse
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse
+    self.predict_and_complete(i, to_scan, columns, transitives)
+    to_scan = scan(i, to_scan)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 128, in predict_and_complete
+  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 52, in scan
+    self.predict_and_complete(i, to_scan, columns, transitives)
+  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete
+    m = match(item.expect, stream, i)
+    for rule in self.predictions[item.expect]:
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 174, in match
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 15, in __eq__
+    for new_item in new_items:
+KeyboardInterrupt
+    return self.regexps[term.name].match(text, index)
+KeyboardInterrupt
+    return self.is_term == other.is_term and self.name == other.name
+KeyboardInterrupt
+    token.run(self, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1547, in run
+    self.subrun(info[0][1], interpreter, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1631, in subrun
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse
+    token.run(interpreter, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute
+    token.run(self, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1547, in run
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+    self.subrun(info[0][1], interpreter, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1631, in subrun
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    token.run(interpreter, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse
+    interpreter.execute(self.code, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute
+    token.run(self, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run
+    interpreter.execute(self.code, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+    interpreter.string(content, str(template_path), kwargs)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2417, in parse
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    token = scanner.one()
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one
+    token.scan(self)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1468, in scan
+    self.subscan(scanner, self.type)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1483, in subscan
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse
+    token = scanner.one()
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one
+    token.scan(self)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1421, in scan
+    token.run(self, locals)
+    i = scanner.complex('{', '}', 0)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1894, in complex
+    if newQuote:
+KeyboardInterrupt
+    interpreter.execute(self.code, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute
+    _exec(statements, self.globals, locals)
+  File "<string>", line 2, in <module>
+  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template
+    interpreter.string(content, str(template_path), kwargs)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string
+    self.safe(scanner, True, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe
+    self.parse(scanner, locals)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2417, in parse
+    token = scanner.one()
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one
+    token.scan(self)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1421, in scan
+    i = scanner.complex('{', '}', 0)
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1901, in complex
+    c = self[i]
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1687, in __getitem__
+    return self.buffer[self.pointer + index]
+KeyboardInterrupt
+make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_c.dir/build.make:296: rosidl_typesupport_c/mavros_msgs/msg/adsb_vehicle__type_support.cpp] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:439: CMakeFiles/mavros_msgs__rosidl_typesupport_c.dir/all] Interrupt
+make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:298: rosidl_typesupport_fastrtps_cpp/mavros_msgs/msg/detail/dds_fastrtps/adsb_vehicle__type_support.cpp] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:412: CMakeFiles/mavros_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt
+make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_c.dir/build.make:298: rosidl_typesupport_introspection_c/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_c.h] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:243: CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt
+Exception ignored in: <function Interpreter.__del__ at 0x7f30ccc784c0>
+Traceback (most recent call last):
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2094, in __del__
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2157, in shutdown
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2647, in finalize
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+Exception ignored in: <function Interpreter.__del__ at 0x7f18e8938280>
+Traceback (most recent call last):
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2094, in __del__
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2157, in shutdown
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2647, in finalize
+  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2200, in push
+AttributeError: '_io.TextIOWrapper' object has no attribute 'push'
+make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_cpp.dir/build.make:296: rosidl_typesupport_cpp/mavros_msgs/msg/adsb_vehicle__type_support.cpp] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:495: CMakeFiles/mavros_msgs__rosidl_typesupport_cpp.dir/all] Interrupt
+make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:298: rosidl_typesupport_introspection_cpp/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_cpp.hpp] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:351: CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

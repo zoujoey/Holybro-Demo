@@ -1,0 +1,707 @@
+[0.000000] (-) TimerEvent: {}
+[0.000158] (libmavconn) JobQueued: {'identifier': 'libmavconn', 'dependencies': OrderedDict()}
+[0.000181] (mavros_msgs) JobQueued: {'identifier': 'mavros_msgs', 'dependencies': OrderedDict()}
+[0.000198] (test_flight_controller_two) JobQueued: {'identifier': 'test_flight_controller_two', 'dependencies': OrderedDict()}
+[0.000210] (mavros) JobQueued: {'identifier': 'mavros', 'dependencies': OrderedDict([('libmavconn', '/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn'), ('mavros_msgs', '/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs')])}
+[0.000224] (mavros_extras) JobQueued: {'identifier': 'mavros_extras', 'dependencies': OrderedDict([('libmavconn', '/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn'), ('mavros_msgs', '/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs'), ('mavros', '/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros')])}
+[0.000237] (libmavconn) JobStarted: {'identifier': 'libmavconn'}
+[0.006083] (mavros_msgs) JobStarted: {'identifier': 'mavros_msgs'}
+[0.011546] (test_flight_controller_two) JobStarted: {'identifier': 'test_flight_controller_two'}
+[0.019316] (libmavconn) JobProgress: {'identifier': 'libmavconn', 'progress': 'cmake'}
+[0.019550] (libmavconn) Command: {'cmd': ['/usr/bin/cmake', '/home/asrl/Holybro-Demo/test_flight_ws_3/src/mavros/libmavconn', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'asrl'), ('SSH_AGENT_PID', '30031'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib'), ('HOME', '/home/asrl'), ('OLDPWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/asrl/test_flight_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asrl'), ('JOURNAL_STREAM', '8:51365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asrl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377'), ('INVOCATION_ID', '07bdec57d72d4f74b08b88033f3d0fd0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/tmp/ssh-xv8WDJec2k2D/agent.30030'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn'), ('LCAV_DRIVE', '/home/kiki/lcav_data'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller')]), 'shell': False}
+[0.022381] (mavros_msgs) JobProgress: {'identifier': 'mavros_msgs', 'progress': 'cmake'}
+[0.022635] (mavros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/asrl/Holybro-Demo/test_flight_ws_3/src/mavros/mavros_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros_msgs'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'asrl'), ('SSH_AGENT_PID', '30031'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib'), ('HOME', '/home/asrl'), ('OLDPWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/asrl/test_flight_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asrl'), ('JOURNAL_STREAM', '8:51365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asrl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377'), ('INVOCATION_ID', '07bdec57d72d4f74b08b88033f3d0fd0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/tmp/ssh-xv8WDJec2k2D/agent.30030'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs'), ('LCAV_DRIVE', '/home/kiki/lcav_data'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller')]), 'shell': False}
+[0.075190] (libmavconn) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.075595] (mavros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.098861] (-) TimerEvent: {}
+[0.121353] (mavros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.121636] (libmavconn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.127697] (mavros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.127825] (libmavconn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.173409] (libmavconn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.173568] (mavros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.174564] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.174695] (libmavconn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.198952] (-) TimerEvent: {}
+[0.220172] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.220375] (libmavconn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.227444] (libmavconn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.227673] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.227763] (libmavconn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.227881] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.229730] (libmavconn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.229784] (mavros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.276822] (mavros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.276999] (libmavconn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.277605] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.277784] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299057] (-) TimerEvent: {}
+[0.326791] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.327160] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.334238] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.334556] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.335960] (libmavconn) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.338028] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.338480] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.339934] (mavros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.355159] (libmavconn) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.355313] (libmavconn) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.356796] (mavros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.356880] (mavros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.399179] (-) TimerEvent: {}
+[0.419628] (test_flight_controller_two) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/build', '--no-deps', 'install_data'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_CA:en', 'USER': 'asrl', 'SSH_AGENT_PID': '30031', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib', 'HOME': '/home/asrl', 'OLDPWD': '/home/asrl/Holybro-Demo/test_flight_ws_3/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1106', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/asrl/test_flight_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'asrl', 'JOURNAL_STREAM': '8:51365', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'asrl', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377', 'INVOCATION_ID': '07bdec57d72d4f74b08b88033f3d0fd0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.364', 'SSH_AUTH_SOCK': '/tmp/ssh-xv8WDJec2k2D/agent.30030', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'JAVA_HOME': '/usr/lib/jvm/java-11-openjdk-amd64', 'PWD': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two', 'LCAV_DRIVE': '/home/kiki/lcav_data', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_two/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/asrl/test_flight_ws/install/px4_msgs'}, 'shell': False}
+[0.468090] (mavros_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.468477] (libmavconn) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.485516] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.486563] (libmavconn) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[0.488302] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.493021] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.499325] (-) TimerEvent: {}
+[0.550464] (test_flight_controller_two) StderrLine: {'line': b"/home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[0.550727] (test_flight_controller_two) StderrLine: {'line': b'  warnings.warn(\n'}
+[0.565475] (mavros_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.578558] (test_flight_controller_two) StdoutLine: {'line': b'running develop\n'}
+[0.584840] (mavros_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.599450] (-) TimerEvent: {}
+[0.639261] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.657855] (mavros_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.658858] (test_flight_controller_two) StdoutLine: {'line': b'running egg_info\n'}
+[0.658961] (test_flight_controller_two) StdoutLine: {'line': b'creating test_flight_controller_three.egg-info\n'}
+[0.660072] (test_flight_controller_two) StdoutLine: {'line': b"writing manifest file 'test_flight_controller_three.egg-info/SOURCES.txt'\n"}
+[0.661522] (test_flight_controller_two) StdoutLine: {'line': b"writing manifest file 'test_flight_controller_three.egg-info/SOURCES.txt'\n"}
+[0.668015] (mavros_msgs) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.0.0 (/opt/ros/foxy/share/rcl_interfaces/cmake)\n'}
+[0.679182] (mavros_msgs) StdoutLine: {'line': b'-- Found geographic_msgs: 1.0.4 (/opt/ros/foxy/share/geographic_msgs/cmake)\n'}
+[0.681624] (test_flight_controller_two) StdoutLine: {'line': b'running build_ext\n'}
+[0.682333] (test_flight_controller_two) StdoutLine: {'line': b'running install_data\n'}
+[0.682443] (test_flight_controller_two) StdoutLine: {'line': b'copying resource/test_flight_controller_three -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/ament_index/resource_index/packages\n'}
+[0.682515] (test_flight_controller_two) StdoutLine: {'line': b'creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/test_flight_controller_three\n'}
+[0.682552] (test_flight_controller_two) StdoutLine: {'line': b'copying package.xml -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_two/share/test_flight_controller_three\n'}
+[0.696966] (libmavconn) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[0.699412] (test_flight_controller_two) CommandEnded: {'returncode': 0}
+[0.700942] (-) TimerEvent: {}
+[0.710566] (test_flight_controller_two) JobEnded: {'identifier': 'test_flight_controller_two', 'rc': 0}
+[0.740352] (libmavconn) StdoutLine: {'line': b'-- Copy mavlink_dialect.hpp to source tree\n'}
+[0.742058] (libmavconn) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[0.743596] (libmavconn) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.789893] (libmavconn) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[0.790342] (mavros_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.791779] (libmavconn) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.801017] (-) TimerEvent: {}
+[0.835621] (libmavconn) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.835856] (libmavconn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.857810] (mavros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.880041] (libmavconn) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.880214] (libmavconn) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[0.901122] (-) TimerEvent: {}
+[0.926604] (libmavconn) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[0.927386] (libmavconn) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.933513] (libmavconn) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.933932] (libmavconn) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/asrl/Holybro-Demo/test_flight_ws_3/src/mavros/libmavconn/include\n'}
+[0.934016] (libmavconn) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.934788] (libmavconn) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.934868] (libmavconn) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.935460] (libmavconn) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.936568] (libmavconn) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.936648] (libmavconn) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.936877] (libmavconn) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.940954] (libmavconn) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.945307] (libmavconn) StdoutLine: {'line': b'-- Generating done\n'}
+[0.946187] (libmavconn) StdoutLine: {'line': b'-- Build files have been written to: /home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn\n'}
+[0.949120] (libmavconn) CommandEnded: {'returncode': 0}
+[0.949519] (libmavconn) JobProgress: {'identifier': 'libmavconn', 'progress': 'build'}
+[0.950159] (libmavconn) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn', '--', '-j16', '-l16'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'asrl'), ('SSH_AGENT_PID', '30031'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib'), ('HOME', '/home/asrl'), ('OLDPWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/asrl/test_flight_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asrl'), ('JOURNAL_STREAM', '8:51365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asrl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377'), ('INVOCATION_ID', '07bdec57d72d4f74b08b88033f3d0fd0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/tmp/ssh-xv8WDJec2k2D/agent.30030'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn'), ('LCAV_DRIVE', '/home/kiki/lcav_data'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller')]), 'shell': False}
+[0.976459] (libmavconn) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[0.976643] (libmavconn) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[0.976712] (libmavconn) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mavconn\x1b[0m\n'}
+[0.988475] (libmavconn) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[0.989060] (libmavconn) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.001257] (-) TimerEvent: {}
+[1.011529] (libmavconn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mavconn.dir/src/interface.cpp.o\x1b[0m\n'}
+[1.011770] (libmavconn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mavconn.dir/generated/src/mavlink_helpers.cpp.o\x1b[0m\n'}
+[1.011849] (libmavconn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mavconn.dir/src/serial.cpp.o\x1b[0m\n'}
+[1.011914] (libmavconn) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mavconn.dir/src/tcp.cpp.o\x1b[0m\n'}
+[1.011975] (libmavconn) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/mavconn.dir/src/udp.cpp.o\x1b[0m\n'}
+[1.101360] (-) TimerEvent: {}
+[1.201692] (-) TimerEvent: {}
+[1.302197] (-) TimerEvent: {}
+[1.402588] (-) TimerEvent: {}
+[1.503067] (-) TimerEvent: {}
+[1.603422] (-) TimerEvent: {}
+[1.606049] (mavros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.703546] (-) TimerEvent: {}
+[1.766519] (libmavconn) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[1.791735] (libmavconn) StdoutLine: {'line': b'[ 66%] Built target gtest_main\n'}
+[1.803672] (-) TimerEvent: {}
+[1.904052] (-) TimerEvent: {}
+[1.994566] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.004162] (-) TimerEvent: {}
+[2.104523] (-) TimerEvent: {}
+[2.205125] (-) TimerEvent: {}
+[2.252816] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.287438] (mavros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.288449] (mavros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.305226] (-) TimerEvent: {}
+[2.310418] (mavros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.310677] (mavros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.310750] (mavros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.310804] (mavros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[2.328383] (mavros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.405282] (-) TimerEvent: {}
+[2.505600] (-) TimerEvent: {}
+[2.582162] (mavros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.599484] (mavros_msgs) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.600829] (mavros_msgs) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.601009] (mavros_msgs) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.602835] (mavros_msgs) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.602977] (mavros_msgs) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.603760] (mavros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.605701] (mavros_msgs) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.605837] (-) TimerEvent: {}
+[2.605972] (mavros_msgs) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.606234] (mavros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.610794] (mavros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.705988] (-) TimerEvent: {}
+[2.806365] (-) TimerEvent: {}
+[2.816561] (mavros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.818623] (mavros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs\n'}
+[2.831557] (mavros_msgs) CommandEnded: {'returncode': 0}
+[2.832196] (mavros_msgs) JobProgress: {'identifier': 'mavros_msgs', 'progress': 'build'}
+[2.832444] (mavros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs', '--', '-j16', '-l16'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'asrl'), ('SSH_AGENT_PID', '30031'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib'), ('HOME', '/home/asrl'), ('OLDPWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/asrl/test_flight_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asrl'), ('JOURNAL_STREAM', '8:51365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asrl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377'), ('INVOCATION_ID', '07bdec57d72d4f74b08b88033f3d0fd0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/tmp/ssh-xv8WDJec2k2D/agent.30030'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/mavros_msgs'), ('LCAV_DRIVE', '/home/kiki/lcav_data'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller')]), 'shell': False}
+[2.906504] (-) TimerEvent: {}
+[2.931928] (mavros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mavros_msgs__cpp\x1b[0m\n'}
+[2.932247] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.945480] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.006597] (-) TimerEvent: {}
+[3.106882] (-) TimerEvent: {}
+[3.207235] (-) TimerEvent: {}
+[3.307587] (-) TimerEvent: {}
+[3.407922] (-) TimerEvent: {}
+[3.508337] (-) TimerEvent: {}
+[3.608655] (-) TimerEvent: {}
+[3.634098] (libmavconn) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[3.672384] (libmavconn) StdoutLine: {'line': b'[ 75%] Built target gtest\n'}
+[3.708765] (-) TimerEvent: {}
+[3.809094] (-) TimerEvent: {}
+[3.909432] (-) TimerEvent: {}
+[4.009738] (-) TimerEvent: {}
+[4.110033] (-) TimerEvent: {}
+[4.210323] (-) TimerEvent: {}
+[4.310593] (-) TimerEvent: {}
+[4.410851] (-) TimerEvent: {}
+[4.488267] (libmavconn) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libmavconn.so\x1b[0m\n'}
+[4.510955] (-) TimerEvent: {}
+[4.593429] (libmavconn) StdoutLine: {'line': b'[ 83%] Built target mavconn\n'}
+[4.599523] (libmavconn) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_mavconn\x1b[0m\n'}
+[4.611091] (-) TimerEvent: {}
+[4.620390] (libmavconn) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/test_mavconn.dir/test/test_mavconn.cpp.o\x1b[0m\n'}
+[4.711194] (-) TimerEvent: {}
+[4.811465] (-) TimerEvent: {}
+[4.911823] (-) TimerEvent: {}
+[5.012159] (-) TimerEvent: {}
+[5.112495] (-) TimerEvent: {}
+[5.212841] (-) TimerEvent: {}
+[5.313135] (-) TimerEvent: {}
+[5.413442] (-) TimerEvent: {}
+[5.513729] (-) TimerEvent: {}
+[5.613975] (-) TimerEvent: {}
+[5.714302] (-) TimerEvent: {}
+[5.814586] (-) TimerEvent: {}
+[5.914886] (-) TimerEvent: {}
+[6.015183] (-) TimerEvent: {}
+[6.115498] (-) TimerEvent: {}
+[6.215821] (-) TimerEvent: {}
+[6.316120] (-) TimerEvent: {}
+[6.416423] (-) TimerEvent: {}
+[6.516724] (-) TimerEvent: {}
+[6.616954] (-) TimerEvent: {}
+[6.717296] (-) TimerEvent: {}
+[6.817543] (-) TimerEvent: {}
+[6.917788] (-) TimerEvent: {}
+[7.018028] (-) TimerEvent: {}
+[7.101714] (libmavconn) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_mavconn\x1b[0m\n'}
+[7.118125] (-) TimerEvent: {}
+[7.192850] (libmavconn) StdoutLine: {'line': b'[100%] Built target test_mavconn\n'}
+[7.203049] (libmavconn) CommandEnded: {'returncode': 0}
+[7.218202] (-) TimerEvent: {}
+[7.221578] (libmavconn) JobProgress: {'identifier': 'libmavconn', 'progress': 'install'}
+[7.228374] (libmavconn) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn'], 'cwd': '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'asrl'), ('SSH_AGENT_PID', '30031'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/home/asrl/test_flight_ws/install/px4_msgs/lib'), ('HOME', '/home/asrl'), ('OLDPWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1106'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/asrl/test_flight_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'asrl'), ('JOURNAL_STREAM', '8:51365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'asrl'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/asrl/miniconda3/bin:/opt/ros/foxy/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/asrl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/asrl-ThinkPad-P15-Gen-2i:@/tmp/.ICE-unix/1377,unix/asrl-ThinkPad-P15-Gen-2i:/tmp/.ICE-unix/1377'), ('INVOCATION_ID', '07bdec57d72d4f74b08b88033f3d0fd0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/14db1d2a_954c_4161_a909_eeb9e983c7fa'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.364'), ('SSH_AUTH_SOCK', '/tmp/ssh-xv8WDJec2k2D/agent.30030'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller:/home/asrl/test_flight_ws/install/px4_msgs'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JAVA_HOME', '/usr/lib/jvm/java-11-openjdk-amd64'), ('PWD', '/home/asrl/Holybro-Demo/test_flight_ws_3/build/libmavconn'), ('LCAV_DRIVE', '/home/kiki/lcav_data'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/asrl/test_flight_ws/build/test_flight_controller:/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages:/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages:/home/duembgen/.local/bin/'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/asrl/test_flight_ws/install/px4_msgs:/opt/ros/foxy:/home/asrl/test_flight_ws/install/test_flight_controller')]), 'shell': False}
+[7.234149] (libmavconn) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.234489] (libmavconn) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.234803] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/lib/libmavconn.so\n'}
+[7.240464] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/console_bridge_compat.hpp\n'}
+[7.245150] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/interface.hpp\n'}
+[7.251682] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp\n'}
+[7.257027] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp.em\n'}
+[7.261798] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/msgbuffer.hpp\n'}
+[7.266250] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/serial.hpp\n'}
+[7.270712] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/tcp.hpp\n'}
+[7.275780] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/thread_utils.hpp\n'}
+[7.280515] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/udp.hpp\n'}
+[7.285242] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/CheckGeographicLibDatasets.cmake\n'}
+[7.290515] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/FindASIO.cmake\n'}
+[7.295147] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/Modules/em_expand.cmake\n'}
+[7.300215] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/library_path.sh\n'}
+[7.305208] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/library_path.dsv\n'}
+[7.310253] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/package_run_dependencies/libmavconn\n'}
+[7.315008] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/parent_prefix_path/libmavconn\n'}
+[7.318276] (-) TimerEvent: {}
+[7.319768] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/ament_prefix_path.sh\n'}
+[7.324712] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/ament_prefix_path.dsv\n'}
+[7.329279] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/path.sh\n'}
+[7.333928] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/environment/path.dsv\n'}
+[7.338485] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.bash\n'}
+[7.343571] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.sh\n'}
+[7.348245] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.zsh\n'}
+[7.352898] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/local_setup.dsv\n'}
+[7.357778] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/package.dsv\n'}
+[7.362360] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/ament_index/resource_index/packages/libmavconn\n'}
+[7.366825] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconn-extras.cmake\n'}
+[7.371388] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.376254] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.380969] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.386469] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconnConfig.cmake\n'}
+[7.392030] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/cmake/libmavconnConfig-version.cmake\n'}
+[7.397091] (libmavconn) StdoutLine: {'line': b'-- Symlinking: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/share/libmavconn/package.xml\n'}
+[7.402213] (libmavconn) StdoutLine: {'line': b'-- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn\n'}
+[7.402297] (libmavconn) StdoutLine: {'line': b'-- Up-to-date: /home/asrl/Holybro-Demo/test_flight_ws_3/install/libmavconn/include/mavconn/mavlink_dialect.hpp\n'}
+[7.405834] (libmavconn) CommandEnded: {'returncode': 0}
+[7.418433] (-) TimerEvent: {}
+[7.441336] (libmavconn) JobEnded: {'identifier': 'libmavconn', 'rc': 0}
+[7.518526] (-) TimerEvent: {}
+[7.618812] (-) TimerEvent: {}
+[7.719121] (-) TimerEvent: {}
+[7.819387] (-) TimerEvent: {}
+[7.919687] (-) TimerEvent: {}
+[8.019991] (-) TimerEvent: {}
+[8.120330] (-) TimerEvent: {}
+[8.220576] (-) TimerEvent: {}
+[8.320865] (-) TimerEvent: {}
+[8.421091] (-) TimerEvent: {}
+[8.521342] (-) TimerEvent: {}
+[8.621807] (-) TimerEvent: {}
+[8.722184] (-) TimerEvent: {}
+[8.822471] (-) TimerEvent: {}
+[8.922807] (-) TimerEvent: {}
+[9.023108] (-) TimerEvent: {}
+[9.123383] (-) TimerEvent: {}
+[9.223673] (-) TimerEvent: {}
+[9.323904] (-) TimerEvent: {}
+[9.424205] (-) TimerEvent: {}
+[9.524478] (-) TimerEvent: {}
+[9.625025] (-) TimerEvent: {}
+[9.671366] (mavros_msgs) StdoutLine: {'line': b'[  0%] Built target mavros_msgs__cpp\n'}
+[9.680931] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.681869] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.682089] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.725120] (-) TimerEvent: {}
+[9.825368] (-) TimerEvent: {}
+[9.925620] (-) TimerEvent: {}
+[10.025884] (-) TimerEvent: {}
+[10.126133] (-) TimerEvent: {}
+[10.226385] (-) TimerEvent: {}
+[10.326677] (-) TimerEvent: {}
+[10.427002] (-) TimerEvent: {}
+[10.527326] (-) TimerEvent: {}
+[10.588855] (mavros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mavros_msgs__rosidl_generator_c\x1b[0m\n'}
+[10.627435] (-) TimerEvent: {}
+[10.628013] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/debug_value__functions.c.o\x1b[0m\n'}
+[10.628294] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/altitude__functions.c.o\x1b[0m\n'}
+[10.628382] (mavros_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/adsb_vehicle__functions.c.o\x1b[0m\n'}
+[10.628447] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/attitude_target__functions.c.o\x1b[0m\n'}
+[10.628533] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/cam_imu_stamp__functions.c.o\x1b[0m\n'}
+[10.628732] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/cellular_status__functions.c.o\x1b[0m\n'}
+[10.628805] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/actuator_control__functions.c.o\x1b[0m\n'}
+[10.630842] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/camera_image_captured__functions.c.o\x1b[0m\n'}
+[10.632396] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_info__functions.c.o\x1b[0m\n'}
+[10.635182] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/command_code__functions.c.o\x1b[0m\n'}
+[10.635381] (mavros_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/companion_process_status__functions.c.o\x1b[0m\n'}
+[10.635738] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_info_item__functions.c.o\x1b[0m\n'}
+[10.672115] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_status__functions.c.o\x1b[0m\n'}
+[10.677996] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_status_item__functions.c.o\x1b[0m\n'}
+[10.679024] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_telemetry__functions.c.o\x1b[0m\n'}
+[10.693323] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/extended_state__functions.c.o\x1b[0m\n'}
+[10.693547] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/esc_telemetry_item__functions.c.o\x1b[0m\n'}
+[10.693634] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/estimator_status__functions.c.o\x1b[0m\n'}
+[10.693836] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/file_entry__functions.c.o\x1b[0m\n'}
+[10.693977] (mavros_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/gpsinput__functions.c.o\x1b[0m\n'}
+[10.701373] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/gpsraw__functions.c.o\x1b[0m\n'}
+[10.702301] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/gpsrtk__functions.c.o\x1b[0m\n'}
+[10.725006] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/global_position_target__functions.c.o\x1b[0m\n'}
+[10.725408] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/hil_actuator_controls__functions.c.o\x1b[0m\n'}
+[10.725976] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/hil_controls__functions.c.o\x1b[0m\n'}
+[10.727508] (-) TimerEvent: {}
+[10.740759] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/hil_gps__functions.c.o\x1b[0m\n'}
+[10.749029] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/hil_state_quaternion__functions.c.o\x1b[0m\n'}
+[10.750689] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/log_data__functions.c.o\x1b[0m\n'}
+[10.750850] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/landing_target__functions.c.o\x1b[0m\n'}
+[10.750968] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/hil_sensor__functions.c.o\x1b[0m\n'}
+[10.752892] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/magnetometer_reporter__functions.c.o\x1b[0m\n'}
+[10.756072] (mavros_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/log_entry__functions.c.o\x1b[0m\n'}
+[10.757956] (mavros_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/home_position__functions.c.o\x1b[0m\n'}
+[10.759426] (mavros_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/manual_control__functions.c.o\x1b[0m\n'}
+[10.767296] (mavros_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/mavlink__functions.c.o\x1b[0m\n'}
+[10.781898] (mavros_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/mount_control__functions.c.o\x1b[0m\n'}
+[10.790863] (mavros_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/nav_controller_output__functions.c.o\x1b[0m\n'}
+[10.800340] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/onboard_computer_status__functions.c.o\x1b[0m\n'}
+[10.803566] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/param__functions.c.o\x1b[0m\n'}
+[10.806672] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/optical_flow_rad__functions.c.o\x1b[0m\n'}
+[10.809352] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/param_value__functions.c.o\x1b[0m\n'}
+[10.811361] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/override_rc_in__functions.c.o\x1b[0m\n'}
+[10.816022] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/param_event__functions.c.o\x1b[0m\n'}
+[10.819328] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/play_tune_v2__functions.c.o\x1b[0m\n'}
+[10.828300] (-) TimerEvent: {}
+[10.833556] (mavros_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/position_target__functions.c.o\x1b[0m\n'}
+[10.842434] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/rc_in__functions.c.o\x1b[0m\n'}
+[10.843087] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/rc_out__functions.c.o\x1b[0m\n'}
+[10.851184] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/rtk_baseline__functions.c.o\x1b[0m\n'}
+[10.851664] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/radio_status__functions.c.o\x1b[0m\n'}
+[10.857057] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/status_text__functions.c.o\x1b[0m\n'}
+[10.858982] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/state__functions.c.o\x1b[0m\n'}
+[10.859556] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/rtcm__functions.c.o\x1b[0m\n'}
+[10.873808] (mavros_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/terrain_report__functions.c.o\x1b[0m\n'}
+[10.882334] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/timesync_status__functions.c.o\x1b[0m\n'}
+[10.882616] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/trajectory__functions.c.o\x1b[0m\n'}
+[10.883550] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/tunnel__functions.c.o\x1b[0m\n'}
+[10.886301] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/thrust__functions.c.o\x1b[0m\n'}
+[10.891360] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/vehicle_info__functions.c.o\x1b[0m\n'}
+[10.902962] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/vibration__functions.c.o\x1b[0m\n'}
+[10.903179] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/vfr_hud__functions.c.o\x1b[0m\n'}
+[10.912837] (mavros_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/waypoint__functions.c.o\x1b[0m\n'}
+[10.919811] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/waypoint_reached__functions.c.o\x1b[0m\n'}
+[10.920633] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/waypoint_list__functions.c.o\x1b[0m\n'}
+[10.928405] (-) TimerEvent: {}
+[10.932737] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_ack__functions.c.o\x1b[0m\n'}
+[10.933706] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/msg/detail/wheel_odom_stamped__functions.c.o\x1b[0m\n'}
+[10.940591] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_int__functions.c.o\x1b[0m\n'}
+[10.945054] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_long__functions.c.o\x1b[0m\n'}
+[10.946226] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_tol__functions.c.o\x1b[0m\n'}
+[10.950788] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_trigger_control__functions.c.o\x1b[0m\n'}
+[10.951009] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_bool__functions.c.o\x1b[0m\n'}
+[10.956254] (mavros_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_home__functions.c.o\x1b[0m\n'}
+[10.959041] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_trigger_interval__functions.c.o\x1b[0m\n'}
+[10.978353] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/endpoint_add__functions.c.o\x1b[0m\n'}
+[10.981920] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_checksum__functions.c.o\x1b[0m\n'}
+[10.982118] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/endpoint_del__functions.c.o\x1b[0m\n'}
+[10.990315] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_close__functions.c.o\x1b[0m\n'}
+[10.992119] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/command_vtol_transition__functions.c.o\x1b[0m\n'}
+[11.009390] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_list__functions.c.o\x1b[0m\n'}
+[11.025996] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_make_dir__functions.c.o\x1b[0m\n'}
+[11.026270] (mavros_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_open__functions.c.o\x1b[0m\n'}
+[11.026374] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_read__functions.c.o\x1b[0m\n'}
+[11.028493] (-) TimerEvent: {}
+[11.034204] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_remove_dir__functions.c.o\x1b[0m\n'}
+[11.035371] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_remove__functions.c.o\x1b[0m\n'}
+[11.040502] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_truncate__functions.c.o\x1b[0m\n'}
+[11.040710] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_rename__functions.c.o\x1b[0m\n'}
+[11.040969] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/file_write__functions.c.o\x1b[0m\n'}
+[11.048996] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/log_request_data__functions.c.o\x1b[0m\n'}
+[11.057560] (mavros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/log_request_end__functions.c.o\x1b[0m\n'}
+[11.077143] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/log_request_list__functions.c.o\x1b[0m\n'}
+[11.084970] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/message_interval__functions.c.o\x1b[0m\n'}
+[11.092598] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/mount_configure__functions.c.o\x1b[0m\n'}
+[11.093689] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/param_get__functions.c.o\x1b[0m\n'}
+[11.102153] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/param_pull__functions.c.o\x1b[0m\n'}
+[11.104771] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/param_set__functions.c.o\x1b[0m\n'}
+[11.107036] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/param_set_v2__functions.c.o\x1b[0m\n'}
+[11.108385] (mavros_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/set_mav_frame__functions.c.o\x1b[0m\n'}
+[11.109187] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/set_mode__functions.c.o\x1b[0m\n'}
+[11.111865] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/param_push__functions.c.o\x1b[0m\n'}
+[11.117448] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/stream_rate__functions.c.o\x1b[0m\n'}
+[11.124426] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/waypoint_clear__functions.c.o\x1b[0m\n'}
+[11.126809] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/vehicle_info_get__functions.c.o\x1b[0m\n'}
+[11.128581] (-) TimerEvent: {}
+[11.151403] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/waypoint_set_current__functions.c.o\x1b[0m\n'}
+[11.152588] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/waypoint_push__functions.c.o\x1b[0m\n'}
+[11.156466] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mavros_msgs__rosidl_generator_c.dir/rosidl_generator_c/mavros_msgs/srv/detail/waypoint_pull__functions.c.o\x1b[0m\n'}
+[11.205391] (mavros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libmavros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[11.228683] (-) TimerEvent: {}
+[11.262648] (mavros_msgs) StdoutLine: {'line': b'[ 12%] Built target mavros_msgs__rosidl_generator_c\n'}
+[11.272512] (mavros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[11.272703] (mavros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.328852] (-) TimerEvent: {}
+[11.429104] (-) TimerEvent: {}
+[11.529345] (-) TimerEvent: {}
+[11.629605] (-) TimerEvent: {}
+[11.729921] (-) TimerEvent: {}
+[11.830172] (-) TimerEvent: {}
+[11.930433] (-) TimerEvent: {}
+[12.030718] (-) TimerEvent: {}
+[12.130982] (-) TimerEvent: {}
+[12.231302] (-) TimerEvent: {}
+[12.331545] (-) TimerEvent: {}
+[12.431795] (-) TimerEvent: {}
+[12.532040] (-) TimerEvent: {}
+[12.632317] (-) TimerEvent: {}
+[12.732577] (-) TimerEvent: {}
+[12.832844] (-) TimerEvent: {}
+[12.933090] (-) TimerEvent: {}
+[13.033425] (-) TimerEvent: {}
+[13.133702] (-) TimerEvent: {}
+[13.233980] (-) TimerEvent: {}
+[13.334310] (-) TimerEvent: {}
+[13.434589] (-) TimerEvent: {}
+[13.534919] (-) TimerEvent: {}
+[13.635260] (-) TimerEvent: {}
+[13.735533] (-) TimerEvent: {}
+[13.835839] (-) TimerEvent: {}
+[13.936104] (-) TimerEvent: {}
+[14.036401] (-) TimerEvent: {}
+[14.136669] (-) TimerEvent: {}
+[14.236932] (-) TimerEvent: {}
+[14.337177] (-) TimerEvent: {}
+[14.437416] (-) TimerEvent: {}
+[14.537666] (-) TimerEvent: {}
+[14.637980] (-) TimerEvent: {}
+[14.738306] (-) TimerEvent: {}
+[14.838586] (-) TimerEvent: {}
+[14.938884] (-) TimerEvent: {}
+[15.039120] (-) TimerEvent: {}
+[15.139395] (-) TimerEvent: {}
+[15.239650] (-) TimerEvent: {}
+[15.308780] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.309095] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.309140] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.309178] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.309221] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>\n'}
+[15.309261] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 23, in <module>\n'}
+[15.309302] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.309338] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 23, in <module>\n'}
+[15.309373] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 23, in <module>\n'}
+[15.309415] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 28, in <module>\n'}
+[15.309460] (mavros_msgs) StderrLine: {'line': b"make[2]: *** Deleting file 'rosidl_typesupport_c/mavros_msgs/msg/adsb_vehicle__type_support.cpp'\n"}
+[15.309499] (mavros_msgs) StderrLine: {'line': b"make[2]: *** Deleting file 'rosidl_typesupport_introspection_cpp/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_cpp.hpp'\n"}
+[15.309535] (mavros_msgs) StderrLine: {'line': b"make[2]: *** Deleting file 'rosidl_typesupport_introspection_c/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_c.h'\n"}
+[15.309571] (mavros_msgs) StderrLine: {'line': b"make[2]: *** Deleting file 'rosidl_typesupport_cpp/mavros_msgs/msg/adsb_vehicle__type_support.cpp'\n"}
+[15.309607] (mavros_msgs) StderrLine: {'line': b"make[2]: *** Deleting file 'rosidl_typesupport_fastrtps_cpp/mavros_msgs/msg/detail/dds_fastrtps/adsb_vehicle__type_support.cpp'\n"}
+[15.309642] (mavros_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[15.309677] (mavros_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[15.309712] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp", line 24, in main\n'}
+[15.309747] (mavros_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[15.309782] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp", line 19, in main\n'}
+[15.309816] (mavros_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[15.309849] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 19, in main\n'}
+[15.309884] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main\n'}
+[15.309920] (mavros_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[15.309954] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp", line 19, in main\n'}
+[15.309990] (mavros_msgs) StderrLine: {'line': b'    return generate_cpp(args.generator_arguments_file, args.typesupports)\n'}
+[15.310025] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_cpp/__init__.py", line 28, in generate_cpp\n'}
+[15.310060] (mavros_msgs) StderrLine: {'line': b'    return generate_cpp(args.generator_arguments_file)\n'}
+[15.310095] (mavros_msgs) StderrLine: {'line': b'    return generate_c(args.generator_arguments_file)\n'}
+[15.310131] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py", line 24, in generate_cpp\n'}
+[15.310166] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py", line 24, in generate_c\n'}
+[15.310201] (mavros_msgs) StderrLine: {'line': b'    return generate_cpp(args.generator_arguments_file)\n'}
+[15.310235] (mavros_msgs) StderrLine: {'line': b'    return generate_c(args.generator_arguments_file, args.typesupports)\n'}
+[15.310271] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_fastrtps_cpp/__init__.py", line 24, in generate_cpp\n'}
+[15.310306] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c\n'}
+[15.310340] (mavros_msgs) StderrLine: {'line': b'    generate_files(\n'}
+[15.310374] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files\n'}
+[15.310410] (mavros_msgs) StderrLine: {'line': b'    generate_files(generator_arguments_file, mapping)\n'}
+[15.310445] (mavros_msgs) StderrLine: {'line': b'    generate_files(generator_arguments_file, mapping)\n'}
+[15.310480] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 87, in generate_files\n'}
+[15.310517] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[15.310552] (mavros_msgs) StderrLine: {'line': b'    generate_files(generator_arguments_file, mapping)\n'}
+[15.310587] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[15.310622] (mavros_msgs) StderrLine: {'line': b'    expand_template(\n'}
+[15.310656] (mavros_msgs) StderrLine: {'line': b'    generate_files(\n'}
+[15.310690] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 149, in expand_template\n'}
+[15.310724] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 74, in generate_files\n'}
+[15.310758] (mavros_msgs) StderrLine: {'line': b'    expand_template(\n'}
+[15.310793] (mavros_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[15.310827] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 149, in expand_template\n'}
+[15.310862] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[15.310897] (mavros_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[15.310931] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[15.310969] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(template_content, template_path, locals=data)\n'}
+[15.311005] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.311040] (mavros_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[15.311074] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(template_content, template_path, locals=data)\n'}
+[15.311106] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[15.311140] (mavros_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[15.311173] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.311207] (mavros_msgs) StderrLine: {'line': b'    idl_file = parse_idl_file(locator)\n'}
+[15.311241] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[15.311278] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 64, in parse_idl_file\n'}
+[15.311311] (mavros_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[15.311345] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[15.311379] (mavros_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[15.311413] (mavros_msgs) StderrLine: {'line': b'    content = parse_idl_string(string, png_file=png_file)\n'}
+[15.311447] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[15.311481] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 72, in parse_idl_string\n'}
+[15.311515] (mavros_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[15.311551] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse\n'}
+[15.311585] (mavros_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[15.311619] (mavros_msgs) StderrLine: {'line': b'    tree = get_ast_from_idl_string(idl_string)\n'}
+[15.311656] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse\n'}
+[15.311690] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_parser/parser.py", line 89, in get_ast_from_idl_string\n'}
+[15.311724] (mavros_msgs) StderrLine: {'line': b'    return _parser.parse(idl_string)\n'}
+[15.311758] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/lark.py", line 293, in parse\n'}
+[15.316841] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start)\n'}
+[15.316920] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse\n'}
+[15.316982] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start)\n'}
+[15.317028] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(text, start=start)\n'}
+[15.317130] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse\n'}
+[15.317233] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 193, in parse\n'}
+[15.317309] (mavros_msgs) StderrLine: {'line': b'    return self._parse(text, start)\n'}
+[15.317345] (mavros_msgs) StderrLine: {'line': b'    return self._parse(text, start)\n'}
+[15.317387] (mavros_msgs) StderrLine: {'line': b'    return self._parse(text, start)\n'}
+[15.317429] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse\n'}
+[15.317475] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse\n'}
+[15.317534] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 54, in _parse\n'}
+[15.317575] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(input, start, *args)\n'}
+[15.317627] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse\n'}
+[15.317667] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(input, start, *args)\n'}
+[15.317707] (mavros_msgs) StderrLine: {'line': b'    return self.parser.parse(input, start, *args)\n'}
+[15.317751] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse\n'}
+[15.317835] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 292, in parse\n'}
+[15.317874] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.317914] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.317953] (mavros_msgs) StderrLine: {'line': b'    to_scan = self._parse(stream, columns, to_scan, start_symbol)\n'}
+[15.318011] (mavros_msgs) StderrLine: {'line': b'    to_scan = self._parse(stream, columns, to_scan, start_symbol)\n'}
+[15.318050] (mavros_msgs) StderrLine: {'line': b'    to_scan = self._parse(stream, columns, to_scan, start_symbol)\n'}
+[15.318090] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse\n'}
+[15.318131] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 135, in _parse\n'}
+[15.318170] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 137, in _parse\n'}
+[15.318211] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.318251] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.318291] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.318331] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse\n'}
+[15.318405] (mavros_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[15.318454] (mavros_msgs) StderrLine: {'line': b'    to_scan = scan(i, to_scan)\n'}
+[15.318491] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 128, in predict_and_complete\n'}
+[15.318533] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/xearley.py", line 52, in scan\n'}
+[15.318587] (mavros_msgs) StderrLine: {'line': b'    self.predict_and_complete(i, to_scan, columns, transitives)\n'}
+[15.318661] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parsers/earley.py", line 140, in predict_and_complete\n'}
+[15.318750] (mavros_msgs) StderrLine: {'line': b'    m = match(item.expect, stream, i)\n'}
+[15.318833] (mavros_msgs) StderrLine: {'line': b'    for rule in self.predictions[item.expect]:\n'}
+[15.318888] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 174, in match\n'}
+[15.318943] (mavros_msgs) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 15, in __eq__\n'}
+[15.319013] (mavros_msgs) StderrLine: {'line': b'    for new_item in new_items:\n'}
+[15.319067] (mavros_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[15.319139] (mavros_msgs) StderrLine: {'line': b'    return self.regexps[term.name].match(text, index)\n'}
+[15.319179] (mavros_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[15.319217] (mavros_msgs) StderrLine: {'line': b'    return self.is_term == other.is_term and self.name == other.name\n'}
+[15.319255] (mavros_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[15.319311] (mavros_msgs) StderrLine: {'line': b'    token.run(self, locals)\n'}
+[15.319350] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1547, in run\n'}
+[15.319414] (mavros_msgs) StderrLine: {'line': b'    self.subrun(info[0][1], interpreter, locals)\n'}
+[15.319456] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1631, in subrun\n'}
+[15.319531] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.319569] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse\n'}
+[15.319605] (mavros_msgs) StderrLine: {'line': b'    token.run(interpreter, locals)\n'}
+[15.319661] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run\n'}
+[15.319719] (mavros_msgs) StderrLine: {'line': b'    interpreter.execute(self.code, locals)\n'}
+[15.319756] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute\n'}
+[15.319794] (mavros_msgs) StderrLine: {'line': b'    token.run(self, locals)\n'}
+[15.319847] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1547, in run\n'}
+[15.319888] (mavros_msgs) StderrLine: {'line': b'    _exec(statements, self.globals, locals)\n'}
+[15.319942] (mavros_msgs) StderrLine: {'line': b'  File "<string>", line 2, in <module>\n'}
+[15.319980] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template\n'}
+[15.320018] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(content, str(template_path), kwargs)\n'}
+[15.320056] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.320093] (mavros_msgs) StderrLine: {'line': b'    self.subrun(info[0][1], interpreter, locals)\n'}
+[15.320132] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1631, in subrun\n'}
+[15.320173] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.320211] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.320255] (mavros_msgs) StderrLine: {'line': b'    token.run(interpreter, locals)\n'}
+[15.320317] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run\n'}
+[15.320372] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.320413] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse\n'}
+[15.320453] (mavros_msgs) StderrLine: {'line': b'    interpreter.execute(self.code, locals)\n'}
+[15.320494] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute\n'}
+[15.320532] (mavros_msgs) StderrLine: {'line': b'    token.run(self, locals)\n'}
+[15.320571] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run\n'}
+[15.320612] (mavros_msgs) StderrLine: {'line': b'    interpreter.execute(self.code, locals)\n'}
+[15.320651] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute\n'}
+[15.320718] (mavros_msgs) StderrLine: {'line': b'    _exec(statements, self.globals, locals)\n'}
+[15.320758] (mavros_msgs) StderrLine: {'line': b'  File "<string>", line 2, in <module>\n'}
+[15.320796] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template\n'}
+[15.320836] (mavros_msgs) StderrLine: {'line': b'    _exec(statements, self.globals, locals)\n'}
+[15.320877] (mavros_msgs) StderrLine: {'line': b'  File "<string>", line 2, in <module>\n'}
+[15.320917] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(content, str(template_path), kwargs)\n'}
+[15.320956] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.320996] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template\n'}
+[15.321058] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(content, str(template_path), kwargs)\n'}
+[15.321096] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.321135] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.321173] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.321223] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.321268] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2417, in parse\n'}
+[15.321307] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.321348] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.321391] (mavros_msgs) StderrLine: {'line': b'    token = scanner.one()\n'}
+[15.321449] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one\n'}
+[15.321487] (mavros_msgs) StderrLine: {'line': b'    token.scan(self)\n'}
+[15.321528] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1468, in scan\n'}
+[15.321569] (mavros_msgs) StderrLine: {'line': b'    self.subscan(scanner, self.type)\n'}
+[15.321606] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1483, in subscan\n'}
+[15.321672] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.321732] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2421, in parse\n'}
+[15.321788] (mavros_msgs) StderrLine: {'line': b'    token = scanner.one()\n'}
+[15.321862] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one\n'}
+[15.321927] (mavros_msgs) StderrLine: {'line': b'    token.scan(self)\n'}
+[15.321990] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1421, in scan\n'}
+[15.322048] (mavros_msgs) StderrLine: {'line': b'    token.run(self, locals)\n'}
+[15.322135] (mavros_msgs) StderrLine: {'line': b"    i = scanner.complex('{', '}', 0)\n"}
+[15.322195] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1425, in run\n'}
+[15.322236] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1894, in complex\n'}
+[15.322276] (mavros_msgs) StderrLine: {'line': b'    if newQuote:\n'}
+[15.322317] (mavros_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[15.322360] (mavros_msgs) StderrLine: {'line': b'    interpreter.execute(self.code, locals)\n'}
+[15.322419] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2596, in execute\n'}
+[15.322458] (mavros_msgs) StderrLine: {'line': b'    _exec(statements, self.globals, locals)\n'}
+[15.322495] (mavros_msgs) StderrLine: {'line': b'  File "<string>", line 2, in <module>\n'}
+[15.322532] (mavros_msgs) StderrLine: {'line': b'  File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_cmake/__init__.py", line 198, in _expand_template\n'}
+[15.322570] (mavros_msgs) StderrLine: {'line': b'    interpreter.string(content, str(template_path), kwargs)\n'}
+[15.322607] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2391, in string\n'}
+[15.322650] (mavros_msgs) StderrLine: {'line': b'    self.safe(scanner, True, locals)\n'}
+[15.322689] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2401, in safe\n'}
+[15.322728] (mavros_msgs) StderrLine: {'line': b'    self.parse(scanner, locals)\n'}
+[15.322768] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2417, in parse\n'}
+[15.322806] (mavros_msgs) StderrLine: {'line': b'    token = scanner.one()\n'}
+[15.322847] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1984, in one\n'}
+[15.322886] (mavros_msgs) StderrLine: {'line': b'    token.scan(self)\n'}
+[15.322926] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1421, in scan\n'}
+[15.322965] (mavros_msgs) StderrLine: {'line': b"    i = scanner.complex('{', '}', 0)\n"}
+[15.323002] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1901, in complex\n'}
+[15.323039] (mavros_msgs) StderrLine: {'line': b'    c = self[i]\n'}
+[15.323077] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 1687, in __getitem__\n'}
+[15.323112] (mavros_msgs) StderrLine: {'line': b'    return self.buffer[self.pointer + index]\n'}
+[15.323151] (mavros_msgs) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[15.330245] (mavros_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_c.dir/build.make:296: rosidl_typesupport_c/mavros_msgs/msg/adsb_vehicle__type_support.cpp] Interrupt\n'}
+[15.330573] (mavros_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:439: CMakeFiles/mavros_msgs__rosidl_typesupport_c.dir/all] Interrupt\n'}
+[15.332262] (mavros_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:298: rosidl_typesupport_fastrtps_cpp/mavros_msgs/msg/detail/dds_fastrtps/adsb_vehicle__type_support.cpp] Interrupt\n'}
+[15.332323] (mavros_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:412: CMakeFiles/mavros_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Interrupt\n'}
+[15.333987] (mavros_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_c.dir/build.make:298: rosidl_typesupport_introspection_c/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_c.h] Interrupt\n'}
+[15.334103] (mavros_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:243: CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_c.dir/all] Interrupt\n'}
+[15.334171] (mavros_msgs) StderrLine: {'line': b'Exception ignored in: <function Interpreter.__del__ at 0x7f30ccc784c0>\n'}
+[15.334242] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.334279] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2094, in __del__\n'}
+[15.334313] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2157, in shutdown\n'}
+[15.334347] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2647, in finalize\n'}
+[15.334381] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2200, in push\n'}
+[15.334414] (mavros_msgs) StderrLine: {'line': b"AttributeError: '_io.TextIOWrapper' object has no attribute 'push'\n"}
+[15.334626] (mavros_msgs) StderrLine: {'line': b'Exception ignored in: <function Interpreter.__del__ at 0x7f18e8938280>\n'}
+[15.334694] (mavros_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[15.334728] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2094, in __del__\n'}
+[15.334762] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2157, in shutdown\n'}
+[15.334795] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2647, in finalize\n'}
+[15.334828] (mavros_msgs) StderrLine: {'line': b'  File "/home/asrl/.local/lib/python3.8/site-packages/em.py", line 2200, in push\n'}
+[15.334862] (mavros_msgs) StderrLine: {'line': b"AttributeError: '_io.TextIOWrapper' object has no attribute 'push'\n"}
+[15.339333] (mavros_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_cpp.dir/build.make:296: rosidl_typesupport_cpp/mavros_msgs/msg/adsb_vehicle__type_support.cpp] Interrupt\n'}
+[15.339450] (mavros_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:495: CMakeFiles/mavros_msgs__rosidl_typesupport_cpp.dir/all] Interrupt\n'}
+[15.339741] (-) TimerEvent: {}
+[15.340301] (mavros_msgs) StderrLine: {'line': b'make[2]: *** [CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:298: rosidl_typesupport_introspection_cpp/mavros_msgs/msg/detail/adsb_vehicle__rosidl_typesupport_introspection_cpp.hpp] Interrupt\n'}
+[15.340421] (mavros_msgs) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:351: CMakeFiles/mavros_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[15.340522] (mavros_msgs) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupt\n'}
+[15.342152] (mavros_msgs) CommandEnded: {'returncode': -2}
+[15.439846] (-) TimerEvent: {}
+[15.540165] (-) TimerEvent: {}
+[15.640436] (-) TimerEvent: {}
+[15.740665] (-) TimerEvent: {}
+[15.840869] (-) TimerEvent: {}
+[15.941071] (-) TimerEvent: {}
+[16.041375] (-) TimerEvent: {}
+[16.129025] (mavros_msgs) JobEnded: {'identifier': 'mavros_msgs', 'rc': 'SIGINT'}
+[16.139334] (mavros) JobSkipped: {'identifier': 'mavros'}
+[16.139394] (mavros_extras) JobSkipped: {'identifier': 'mavros_extras'}
+[16.139416] (-) EventReactorShutdown: {}

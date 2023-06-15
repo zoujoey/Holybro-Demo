@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws/build/test_flight_controller",
+        "/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages",
+        "/home/duembgen/.local/bin/"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws/build/test_flight_controller",
+        "/home/asrl/test_flight_ws/install/test_flight_controller/lib/python3.8/site-packages",
+        "/home/asrl/test_flight_ws/install/px4_msgs/lib/python3.8/site-packages",
+        "/home/duembgen/.local/bin/"
+    ]
+}
