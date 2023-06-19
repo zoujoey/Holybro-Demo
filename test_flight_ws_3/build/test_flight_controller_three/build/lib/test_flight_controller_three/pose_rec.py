@@ -18,7 +18,7 @@ class publishernode(Node):
         x = pose_stamped_msg.pose.position.x
         y = pose_stamped_msg.pose.position.y
         z = pose_stamped_msg.pose.position.z
-        # self.get_logger().info(f'Publishing PoseStamped message: t={t}, x={x}, y={y}, z={z}')
+        self.get_logger().info(f'Publishing PoseStamped message: t={t}, x={x}, y={y}, z={z}')
         self.pos_pub.publish(pose_stamped_msg)
         
 def main(args = None):

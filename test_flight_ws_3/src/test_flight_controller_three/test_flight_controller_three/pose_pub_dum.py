@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
-from vicon_receiver.msg import Position
 
 class publishernode(Node):
     def __init__(self):
@@ -10,8 +9,9 @@ class publishernode(Node):
         self.counter = 0
         self.pos_pub = self.create_publisher(
             PoseStamped, "/Wifi/Channel_One", 10)
+        self.timer_ = self.create_timer(0.5, self.publish_datum)
     
-    def publish_datum(self, datum:Position):
+    def publish_datum(self):
         pose_stamped_msg = PoseStamped()
 
         # Populate the pose information
@@ -30,7 +30,7 @@ class publishernode(Node):
         x = pose_stamped_msg.pose.position.x
         y = pose_stamped_msg.pose.position.y
         z = pose_stamped_msg.pose.position.z
-        self.get_logger().info('Publish')
+        self.get_logger().info(f'Publish')
         self.pos_pub.publish(pose_stamped_msg)
         
 def main(args = None):
