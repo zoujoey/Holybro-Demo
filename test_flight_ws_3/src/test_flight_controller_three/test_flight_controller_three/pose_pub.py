@@ -9,7 +9,7 @@ class publishernode(Node):
         self.get_logger().info("Hello_World1")
         self.counter = 0
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/mavros/vision_pose/pose", 20)
+            PoseStamped, "/Wifi/Channel_One", 20)
         self.posedummy_pub = self.create_subscription(
             Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, 10)
     

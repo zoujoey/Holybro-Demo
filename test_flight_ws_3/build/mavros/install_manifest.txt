@@ -1,3 +1,0 @@
-/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/libmavros.so
-/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/mavros/mavros_node
-/home/asrl/Holybro-Demo/test_flight_ws_3/install/mavros/lib/libmavros_plugins.so

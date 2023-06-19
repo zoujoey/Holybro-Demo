@@ -16,3 +16,4 @@ test_flight_controller_three/__init__.py
 test_flight_controller_three/pose_pub.py
 test_flight_controller_three/pose_pub_dum.py
 test_flight_controller_three/pose_pub_dummy.py
+test_flight_controller_three/pose_rec.py
