@@ -9,7 +9,7 @@ class publishernode(Node):
         self.counter = 0
         self.pos_pub = self.create_publisher(
             PoseStamped, "/Wifi/Channel_One", 10)
-        self.timer_ = self.create_timer(0.5, self.publish_datum)
+        self.timer_ = self.create_timer(0.001, self.publish_datum)
     
     def publish_datum(self):
         pose_stamped_msg = PoseStamped()

@@ -2,14 +2,20 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from px4_msgs.msg import VehicleVisualOdometry
+from rclpy.qos import QoSProfile
+from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
 
 class publishernode(Node):
     def __init__(self):
         super().__init__("pose_pub")
         self.get_logger().info("Hello_World1")
-        self.counter = 0
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+            depth=5,
+            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
+            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
         self.pos_pub = self.create_publisher(
-            VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
+            VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", qos_profile)
         self.posedummy_pub = self.create_subscription(
             PoseStamped, "/Wifi/Channel_One", self.publish_datum, 10)
     
