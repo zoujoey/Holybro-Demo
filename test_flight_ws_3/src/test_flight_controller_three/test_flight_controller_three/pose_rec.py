@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
+from px4_msgs.msg import VehicleVisualOdometry
 
 class publishernode(Node):
     def __init__(self):
@@ -8,18 +9,29 @@ class publishernode(Node):
         self.get_logger().info("Hello_World1")
         self.counter = 0
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/mavros/vision_pose/pose", 20)
+            VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
         self.posedummy_pub = self.create_subscription(
             PoseStamped, "/Wifi/Channel_One", self.publish_datum, 10)
     
     def publish_datum(self, datum:PoseStamped):
-        pose_stamped_msg = datum
-        t = pose_stamped_msg.header.stamp
-        x = pose_stamped_msg.pose.position.x
-        y = pose_stamped_msg.pose.position.y
-        z = pose_stamped_msg.pose.position.z
-        self.get_logger().info(f'Publishing PoseStamped message: t={t}, x={x}, y={y}, z={z}')
-        self.pos_pub.publish(pose_stamped_msg)
+        msg = VehicleVisualOdometry()
+        msg.local_frame = 1
+        msg.x = datum.pose.position.x
+        msg.y = datum.pose.position.y
+        msg.z = datum.pose.position.z
+        msg.q = [datum.pose.orientation.x,datum.pose.orientation.y,datum.pose.orientation.z,datum.pose.orientation.w]
+        msg.velocity_frame = 1
+        msg.vx = float("NaN")
+        msg.vy = float("NaN")
+        msg.vz = float("NaN") 
+        msg.rollspeed = float("NaN")
+        msg.pitchspeed = float("NaN")
+        msg.yawspeed = float("NaN")
+        msg.pose_covariance = [float("NaN")]*21
+        msg.velocity_covariance = [float("NaN")]*21
+        msg.reset_counter = 5
+        self.get_logger().info("Datum Published: "+str(msg.timestamp)+"\n" + str(msg.x)+" "+str(msg.y)+" "+str(msg.z))
+        self.pos_pub.publish(msg)
         
 def main(args = None):
     rclpy.init(args = args)
