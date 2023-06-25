@@ -13,7 +13,8 @@ class publishernode(Node):
         qos_profile = QoSProfile(
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.BEST_EFFORT)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.pos_pub = self.create_publisher(
             VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
         self.posedummy_pub = self.create_subscription(

@@ -3,6 +3,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
+import sys
 
 class publishernode(Node):
     def __init__(self):
@@ -10,10 +11,12 @@ class publishernode(Node):
         self.get_logger().info("Hello_World1")
         self.counter = 0
         qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/Wifi/Channel_One", 10)
+            PoseStamped, "/Wifi/Channel_One", qos_profile)
         self.timer_ = self.create_timer(0.01, self.publish_datum)
     
     def publish_datum(self):
@@ -39,10 +42,7 @@ class publishernode(Node):
         self.pos_pub.publish(pose_stamped_msg)
         
 def main(args = None):
-    ros_master_hostname = "asrl-ThinkPad-P15-Gen-2i"
-    ros_master_port = "11311"
-    ros_master_uri = f"http://{ros_master_hostname}:{ros_master_port}"
-    rclpy.init(args=['--ros-args', '-r', ros_master_uri])
+    rclpy.init(args=args)
     node = publishernode()
     rclpy.spin(node)
     rclpy.shutdown()

@@ -11,10 +11,12 @@ class publishernode(Node):
         self.get_logger().info("Hello_World1")
         self.counter = 0
         qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/Wifi/Channel_One", 10)
+            PoseStamped, "/Wifi/Channel_One", qos_profile)
         self.timer_ = self.create_timer(0.01, self.publish_datum)
     
     def publish_datum(self):

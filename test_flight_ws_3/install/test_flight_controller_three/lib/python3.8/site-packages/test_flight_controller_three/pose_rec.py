@@ -13,7 +13,8 @@ class publishernode(Node):
         qos_profile = QoSProfile(
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.BEST_EFFORT)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.pos_pub = self.create_publisher(
             VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
         self.posedummy_pub = self.create_subscription(
@@ -40,9 +41,7 @@ class publishernode(Node):
         self.pos_pub.publish(msg)
         
 def main(args = None):
-    ros_master_uri = 'http://asrl-ThinkPad-P15-Gen-2i:11311'
-    sys.argv.append('__master:={}'.format(ros_master_uri))
-    rclpy.init(args=sys.argv)
+    rclpy.init(args=args)
     node = publishernode()
     rclpy.spin(node)
     rclpy.shutdown()
