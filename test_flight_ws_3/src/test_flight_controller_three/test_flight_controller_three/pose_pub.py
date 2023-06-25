@@ -2,16 +2,23 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from vicon_receiver.msg import Position
+from rclpy.qos import QoSProfile
+from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
 
 class publishernode(Node):
     def __init__(self):
         super().__init__("pose_pub")
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+            depth=5,
+            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
+            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
         self.get_logger().info("Hello_World1")
         self.counter = 0
         self.pos_pub = self.create_publisher(
             PoseStamped, "/Wifi/Channel_One", 20)
         self.posedummy_pub = self.create_subscription(
-            Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, 10)
+            Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, qos_profile)
     
     def publish_datum(self, datum:Position):
         pose_stamped_msg = PoseStamped()

@@ -1,14 +1,21 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
+from rclpy.qos import QoSProfile
+from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
 
 class publishernode(Node):
     def __init__(self):
         super().__init__("pose_pub_dum")
         self.get_logger().info("Hello_World1")
         self.counter = 0
+        qos_profile = QoSProfile(
+            history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+            depth=5,
+            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
+            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/Wifi/Channel_One", 10)
+            PoseStamped, "/Wifi/Channel_One", qos_profile)
         self.timer_ = self.create_timer(0.001, self.publish_datum)
     
     def publish_datum(self):
