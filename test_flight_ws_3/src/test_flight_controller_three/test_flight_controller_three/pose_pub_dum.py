@@ -40,9 +40,7 @@ class publishernode(Node):
         self.pos_pub.publish(pose_stamped_msg)
         
 def main(args = None):
-    ros_master_uri = 'http://asrl-ThinkPad-P15-Gen-2i:11311'
-    sys.argv.append('__master:={}'.format(ros_master_uri))
-    rclpy.init(args=sys.argv)
+    rclpy.init(args=args)
     node = publishernode()
     rclpy.spin(node)
     rclpy.shutdown()
