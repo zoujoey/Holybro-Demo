@@ -15,9 +15,9 @@ class publishernode(Node):
             reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
             durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
         self.pos_pub = self.create_publisher(
-            VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", qos_profile)
+            VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
         self.posedummy_pub = self.create_subscription(
-            PoseStamped, "/Wifi/Channel_One", self.publish_datum, 10)
+            PoseStamped, "/Wifi/Channel_One", self.publish_datum, qos_profile)
     
     def publish_datum(self, datum:PoseStamped):
         msg = VehicleVisualOdometry()
