@@ -39,7 +39,10 @@ class publishernode(Node):
         self.pos_pub.publish(msg)
         
 def main(args = None):
-    rclpy.init(args = args)
+    ros_master_hostname = "asrl-ThinkPad-P15-Gen-2i"
+    ros_master_port = "11311"
+    ros_master_uri = f"http://{ros_master_hostname}:{ros_master_port}"
+    rclpy.init(args=['--ros-args', '-r', ros_master_uri])
     node = publishernode()
     rclpy.spin(node)
     rclpy.shutdown()
