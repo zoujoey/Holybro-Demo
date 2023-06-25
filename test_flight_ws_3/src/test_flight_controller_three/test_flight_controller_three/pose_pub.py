@@ -18,7 +18,7 @@ class publishernode(Node):
         self.pos_pub = self.create_publisher(
             PoseStamped, "/Wifi/Channel_One", 20)
         self.posedummy_pub = self.create_subscription(
-            Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, qos_profile)
+            Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, 10)
     
     def publish_datum(self, datum:Position):
         pose_stamped_msg = PoseStamped()

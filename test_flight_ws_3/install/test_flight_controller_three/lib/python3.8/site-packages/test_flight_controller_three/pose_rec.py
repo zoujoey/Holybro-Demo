@@ -10,10 +10,9 @@ class publishernode(Node):
         super().__init__("pose_pub")
         self.get_logger().info("Hello_World1")
         qos_profile = QoSProfile(
-            history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+            history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
-            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT)
         self.pos_pub = self.create_publisher(
             VehicleVisualOdometry, "/fmu/vehicle_visual_odometry/in", 10)
         self.posedummy_pub = self.create_subscription(
