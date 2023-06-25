@@ -4,6 +4,7 @@ from geometry_msgs.msg import PoseStamped
 from px4_msgs.msg import VehicleVisualOdometry
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
+import sys
 
 class publishernode(Node):
     def __init__(self):
@@ -39,10 +40,9 @@ class publishernode(Node):
         self.pos_pub.publish(msg)
         
 def main(args = None):
-    ros_master_hostname = "asrl-ThinkPad-P15-Gen-2i"
-    ros_master_port = "11311"
-    ros_master_uri = f"http://{ros_master_hostname}:{ros_master_port}"
-    rclpy.init(args=['--ros-args', '-r', ros_master_uri])
+    ros_master_uri = 'http://asrl-ThinkPad-P15-Gen-2i:11311'
+    sys.argv.append('__master:={}'.format(ros_master_uri))
+    rclpy.init(args=sys.argv)
     node = publishernode()
     rclpy.spin(node)
     rclpy.shutdown()
