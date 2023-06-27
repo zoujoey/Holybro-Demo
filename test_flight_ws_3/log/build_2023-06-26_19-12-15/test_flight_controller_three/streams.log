@@ -1,0 +1,19 @@
+[0.372s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build
+[0.520s] running develop
+[0.613s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build
+[0.615s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/src/test_flight_controller_three': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_three build --build-base /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build install --record /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/install.log --single-version-externally-managed
+[0.752s] running egg_info
+[0.755s] writing manifest file '../../build/test_flight_controller_three/test_flight_controller_three.egg-info/SOURCES.txt'
+[0.755s] running build
+[0.755s] running build_py
+[0.755s] copying test_flight_controller_three/pose_rec_two.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+[0.755s] running install
+[0.756s] running install_lib
+[0.756s] byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_rec_two.py to pose_rec_two.cpython-38.pyc
+[0.757s] running install_data
+[0.757s] running install_egg_info
+[0.758s] removing '/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three-0.0.0-py3.8.egg-info' (and everything under it)
+[0.758s] Copying ../../build/test_flight_controller_three/test_flight_controller_three.egg-info to /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three-0.0.0-py3.8.egg-info
+[0.758s] running install_scripts
+[0.769s] writing list of installed files to '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/install.log'
+[0.782s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/src/test_flight_controller_three' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_flight_controller_three build --build-base /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build install --record /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/install.log --single-version-externally-managed
