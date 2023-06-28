@@ -24,7 +24,8 @@ setup(
             "pose_pub_dummy = test_flight_controller_three.pose_pub_dummy:main",
             "pose_pub_dum = test_flight_controller_three.pose_pub_dum:main",
             "pose_rec = test_flight_controller_three.pose_rec:main",
-            "pose_rec_two = test_flight_controller_three.pose_rec_two:main"
+            "pose_rec_two = test_flight_controller_three.pose_rec_two:main",
+            "pose_rec_three = test_flight_controller_three.pose_rec_three:main"
         ],
     },
 )

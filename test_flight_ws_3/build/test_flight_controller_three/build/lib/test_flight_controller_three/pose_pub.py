@@ -9,14 +9,14 @@ class publishernode(Node):
     def __init__(self):
         super().__init__("pose_pub")
         qos_profile = QoSProfile(
-            history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+            history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
-            reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
-            durability=QoSDurabilityPolicy.RMW_QOS_POLICY_DURABILITY_VOLATILE)
+            reliability=QoSReliabilityPolicy.BEST_EFFORT,
+            durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.get_logger().info("Hello_World1")
         self.counter = 0
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/Wifi/Channel_One", 20)
+            PoseStamped, "/Wifi/Channel_One", qos_profile)
         self.posedummy_pub = self.create_subscription(
             Position, "/vicon/Holybro_Drone/Holybro_Drone", self.publish_datum, 10)
     
@@ -39,7 +39,7 @@ class publishernode(Node):
         x = pose_stamped_msg.pose.position.x
         y = pose_stamped_msg.pose.position.y
         z = pose_stamped_msg.pose.position.z
-        # self.get_logger().info(f'Publishing PoseStamped message: t={t}, x={x}, y={y}, z={z}')
+        self.get_logger().info(f'Publishing PoseStamped message: t={t}, x={x}, y={y}, z={z}')
         self.pos_pub.publish(pose_stamped_msg)
         
 def main(args = None):

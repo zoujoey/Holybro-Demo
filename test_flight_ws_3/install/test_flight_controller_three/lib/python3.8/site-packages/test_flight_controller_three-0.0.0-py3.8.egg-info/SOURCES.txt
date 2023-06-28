@@ -17,4 +17,5 @@ test_flight_controller_three/pose_pub.py
 test_flight_controller_three/pose_pub_dum.py
 test_flight_controller_three/pose_pub_dummy.py
 test_flight_controller_three/pose_rec.py
+test_flight_controller_three/pose_rec_three.py
 test_flight_controller_three/pose_rec_two.py

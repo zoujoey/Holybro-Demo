@@ -24,8 +24,8 @@ class publishernode(Node):
         self.xdatum2 = VehicleVisualOdometry()
     def timesync_callback(self, datum1:Timesync):
         if self.xdatum2 != None:
-            self.xdatum2.timestamp = datum1.tc1
-            self.xdatum2.timestamp_sample = datum1.ts1
+            self.xdatum2.timestamp = datum1.timestamp
+            self.xdatum2.timestamp_sample = datum1.timestamp
             self.xdatum2.reset_counter = 5
             msg = self.xdatum2
             self.get_logger().info("Datum Published: "+str(msg.timestamp)+"\n" + str(msg.x)+" "+str(msg.y)+" "+str(msg.z))
@@ -33,7 +33,7 @@ class publishernode(Node):
     def pose_callback(self, datum:PoseStamped):
         msg = VehicleVisualOdometry()
         msg.timestamp = 2
-        msg.local_frame = 1
+        msg.local_frame = 2
         msg.x = datum.pose.position.x
         msg.y = datum.pose.position.y
         msg.z = datum.pose.position.z
