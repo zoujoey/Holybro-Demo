@@ -4,6 +4,8 @@ from geometry_msgs.msg import PoseStamped
 from vicon_receiver.msg import Position
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
+from pyquaternion import Quaternion
+import numpy as np
 
 class publishernode(Node):
     def __init__(self):
@@ -24,13 +26,38 @@ class publishernode(Node):
         pose_stamped_msg = PoseStamped()
 
         # Populate the pose information
+        local_rot = Quaternion([datum.w, datum.x_rot, datum.y_rot, datum.z_rot])
+        C_local = local_rot.rotation_matrix
+        #C_enu2ned = np.r_[
+        #    np.c_[0, 1, 0],
+        #    np.c_[1, 0, 0],
+        #    np.c_[0, 0, -1]
+        #]
+        # C_local2enu = np.r_[
+        #     np.c_[0, 1, 0],
+        #     np.c_[-1, 0, 0],
+        #     np.c_[0, 0, 1]
+        # ]
+        # C_ned =    C_local2enu @ C_local
+        # enu_rot = Quaternion._from_matrix(C_ned)
+        
+        # enu2ned = Quaternion(0, np.sqrt(2)/2, np.sqrt(2)/2, 0) # w, x, y, z,   
+        # quat = Quaternion(0, 1, 0, 0)
+        flu2ned = Quaternion(0,1,0,0)
+        quat2 = Quaternion(0,-1,0,0)
+        ned_rot = flu2ned * local_rot * quat2
+        
+        self.get_logger().info(f"before rotation: {(np.array(local_rot.yaw_pitch_roll))}")
+        self.get_logger().info(f"after new rotation: {(np.array(ned_rot.yaw_pitch_roll))}")
+        #self.get_logger().info(f"after old rotation: {(np.array(ned_rot2.yaw_pitch_roll) * 180 / np.pi).round()}")
         pose_stamped_msg.pose.position.x = datum.x_trans/1000
-        pose_stamped_msg.pose.position.y = datum.y_trans/1000
-        pose_stamped_msg.pose.position.z = datum.z_trans/1000
-        pose_stamped_msg.pose.orientation.x = datum.x_rot
-        pose_stamped_msg.pose.orientation.y = datum.y_rot
-        pose_stamped_msg.pose.orientation.z = datum.z_rot
-        pose_stamped_msg.pose.orientation.w = datum.w
+        pose_stamped_msg.pose.position.y = -datum.y_trans/1000 
+        pose_stamped_msg.pose.position.z = -datum.z_trans/1000
+        pose_stamped_msg.pose.orientation.x = ned_rot.x
+        pose_stamped_msg.pose.orientation.y = ned_rot.y
+        pose_stamped_msg.pose.orientation.z = ned_rot.z
+        pose_stamped_msg.pose.orientation.w = ned_rot.w
+
 
         # Populate the header information
         pose_stamped_msg.header.stamp = self.get_clock().now().to_msg()

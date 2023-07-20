@@ -10,6 +10,14 @@ setup.py
 ../../build/test_flight_controller_three/test_flight_controller_three.egg-info/zip-safe
 resource/test_flight_controller_three
 test_flight_controller_three/__init__.py
+test_flight_controller_three/offboard_control.py
+test_flight_controller_three/offboard_control_circle.py
+test_flight_controller_three/offboard_control_circle_tilted.py
+test_flight_controller_three/offboard_control_square.py
+test_flight_controller_three/offboard_ex.py
+test_flight_controller_three/offboard_hover.py
+test_flight_controller_three/pose_grapher.py
+test_flight_controller_three/pose_grapher_xy.py
 test_flight_controller_three/pose_pub.py
 test_flight_controller_three/pose_pub_dum.py
 test_flight_controller_three/pose_pub_dummy.py

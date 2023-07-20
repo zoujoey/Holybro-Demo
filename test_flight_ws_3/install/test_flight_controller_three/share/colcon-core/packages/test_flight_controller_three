@@ -1,1 +1,1 @@
-geometry_msgs:nav_msgs:px4_msgs:rclpy:sensor_msgs:time:vicon_receiver
+geometry_msgs:math:nav_msgs:px4_msgs:pyquaternion:rclpy:sensor_msgs:time:vicon_receiver

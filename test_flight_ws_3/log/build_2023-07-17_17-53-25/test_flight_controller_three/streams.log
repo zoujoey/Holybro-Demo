@@ -1,0 +1,7 @@
+[0.407s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build --no-deps install_data
+[0.570s] running develop
+[0.658s] running egg_info
+[0.661s] writing manifest file 'test_flight_controller_three.egg-info/SOURCES.txt'
+[0.681s] running build_ext
+[0.682s] running install_data
+[0.700s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build --no-deps install_data

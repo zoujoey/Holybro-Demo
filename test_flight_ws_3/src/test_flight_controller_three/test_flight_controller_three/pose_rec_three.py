@@ -7,8 +7,6 @@ from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolic
 import time
 import sys
 
-import pyquaternion
-
 class publishernode(Node):
     def __init__(self):
         super().__init__("pose_rec_two")
