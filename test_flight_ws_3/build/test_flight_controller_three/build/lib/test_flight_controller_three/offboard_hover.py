@@ -109,11 +109,11 @@ class OffboardControl(Node):
     def publish_trajectory_setpoint(self):
         msg = TrajectorySetpoint()
         if self.waypoint_reached == 0:
-            msg.x,msg.y,msg.z = 0.0, 0.0, -2.0 
-        if (self.offboard_setpoint_counter_>100) and self.waypoint_reached == 1:
             msg.x,msg.y,msg.z = 0.0, 0.0, -1.0 
+        if (self.offboard_setpoint_counter_>100) and self.waypoint_reached == 1:
+            msg.x,msg.y,msg.z = 0.0, 0.0, -0.5 
         if (self.offboard_setpoint_counter_>150) and self.waypoint_reached == 2:
-            msg.x,msg.y,msg.z = 0.0, 0.0, 0.0 
+            msg.x,msg.y,msg.z = 0.0, 0.0, -0.3 
         msg.yaw = 0.  # [-PI:PI]
         msg.timestamp = self.time()
         self.trajectory_setpoint_publisher_.publish(msg)

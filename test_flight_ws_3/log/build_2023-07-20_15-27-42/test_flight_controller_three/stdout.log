@@ -1,0 +1,35 @@
+running develop
+running egg_info
+writing manifest file '../../build/test_flight_controller_three/test_flight_controller_three.egg-info/SOURCES.txt'
+running build
+running build_py
+copying test_flight_controller_three/offboard_control_circle.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/pose_grapher_xy.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/pose_grapher.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/offboard_control.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/offboard_control_square.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/pose_pub.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+copying test_flight_controller_three/offboard_control_circle_tilted.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/build/lib/test_flight_controller_three
+running install
+running install_lib
+creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_pub_dum.py to pose_pub_dum.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_hover.py to offboard_hover.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_control_circle.py to offboard_control_circle.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_rec_two.py to pose_rec_two.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_grapher_xy.py to pose_grapher_xy.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_pub_dummy.py to pose_pub_dummy.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_ex.py to offboard_ex.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_rec.py to pose_rec.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_rec_three.py to pose_rec_three.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_grapher.py to pose_grapher.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_control.py to offboard_control.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_control_square.py to offboard_control_square.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/pose_pub.py to pose_pub.cpython-38.pyc
+byte-compiling /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three/offboard_control_circle_tilted.py to offboard_control_circle_tilted.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/test_flight_controller_three/test_flight_controller_three.egg-info to /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_three/lib/python3.8/site-packages/test_flight_controller_three-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_three/install.log'

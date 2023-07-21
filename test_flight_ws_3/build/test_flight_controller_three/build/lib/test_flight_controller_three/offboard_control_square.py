@@ -39,15 +39,15 @@ class OffboardControl(Node):
         self.setpoint_current = TrajectorySetpoint
         self.last_update_time_rel = 0
         self.last_update_time_abs = int(time.time()*1000000)
-        self.setpoint_targets = [(0.0,0.0,-2.0,0.0), 
-                                 (2.0,0.0,-2.0,0.0),
-                                 (2.0,2.0,-2.0,0.0),
-                                 (-2.0,2.0,-2.0,0.0),
-                                 (-2.0,-2.0,-2.0,0.0),
-                                 (2.0,-2.0,-2.0,0.0),
-                                 (2.0,0.0,-2.0,0.0),
-                                 (0.0,0.0,-2.0,0.0),
-                                 (0.0,0.0,0.0,0.0)]        
+        self.setpoint_targets = [(0.0,0.0,-1.0,0.0), 
+                                 (1.0,0.0,-1.0,0.0),
+                                 (1.0,1.0,-1.0,0.0),
+                                 (-1.0,1.0,-1.0,0.0),
+                                 (-1.0,-1.0,-1.0,0.0),
+                                 (1.0,-1.0,-1.0,0.0),
+                                 (1.0,0.0,-1.0,0.0),
+                                 (0.0,0.0,-1.0,0.0),
+                                 (0.0,0.0,-0.3,0.0)]        
     
     def timer_callback(self):
         self.publish_trajectory_setpoint(self.setpoint_targets[self.offboard_setpoint_counter_])
