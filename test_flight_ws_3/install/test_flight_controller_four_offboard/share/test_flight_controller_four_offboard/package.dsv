@@ -1,0 +1,9 @@
+source;share/test_flight_controller_four_offboard/hook/pythonpath.ps1
+source;share/test_flight_controller_four_offboard/hook/pythonpath.dsv
+source;share/test_flight_controller_four_offboard/hook/pythonpath.sh
+source;share/test_flight_controller_four_offboard/hook/ament_prefix_path.ps1
+source;share/test_flight_controller_four_offboard/hook/ament_prefix_path.dsv
+source;share/test_flight_controller_four_offboard/hook/ament_prefix_path.sh
+source;../../build/test_flight_controller_four_offboard/share/test_flight_controller_four_offboard/hook/pythonpath_develop.ps1
+source;../../build/test_flight_controller_four_offboard/share/test_flight_controller_four_offboard/hook/pythonpath_develop.dsv
+source;../../build/test_flight_controller_four_offboard/share/test_flight_controller_four_offboard/hook/pythonpath_develop.sh

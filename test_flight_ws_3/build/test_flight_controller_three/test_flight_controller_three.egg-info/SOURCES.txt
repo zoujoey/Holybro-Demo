@@ -9,16 +9,7 @@ setup.py
 ../../build/test_flight_controller_three/test_flight_controller_three.egg-info/top_level.txt
 ../../build/test_flight_controller_three/test_flight_controller_three.egg-info/zip-safe
 resource/test_flight_controller_three
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
 test_flight_controller_three/__init__.py
-test_flight_controller_three/offboard_control.py
-test_flight_controller_three/offboard_control_circle.py
-test_flight_controller_three/offboard_control_circle_tilted.py
-test_flight_controller_three/offboard_control_square.py
-test_flight_controller_three/offboard_ex.py
-test_flight_controller_three/offboard_hover.py
 test_flight_controller_three/pose_grapher.py
 test_flight_controller_three/pose_grapher_xy.py
 test_flight_controller_three/pose_pub.py
@@ -27,3 +18,10 @@ test_flight_controller_three/pose_pub_dummy.py
 test_flight_controller_three/pose_rec.py
 test_flight_controller_three/pose_rec_three.py
 test_flight_controller_three/pose_rec_two.py
+test_flight_controller_three.egg-info/PKG-INFO
+test_flight_controller_three.egg-info/SOURCES.txt
+test_flight_controller_three.egg-info/dependency_links.txt
+test_flight_controller_three.egg-info/entry_points.txt
+test_flight_controller_three.egg-info/requires.txt
+test_flight_controller_three.egg-info/top_level.txt
+test_flight_controller_three.egg-info/zip-safe

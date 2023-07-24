@@ -1,0 +1,12 @@
+running develop
+running egg_info
+creating test_flight_controller_four_offboard.egg-info
+writing manifest file 'test_flight_controller_four_offboard.egg-info/SOURCES.txt'
+writing manifest file 'test_flight_controller_four_offboard.egg-info/SOURCES.txt'
+running build_ext
+running install_data
+creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_four_offboard/share/ament_index
+creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_four_offboard/share/ament_index/resource_index
+creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_four_offboard/share/ament_index/resource_index/packages
+copying resource/test_flight_controller_four_offboard -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_four_offboard/share/ament_index/resource_index/packages
+copying package.xml -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_four_offboard/share/test_flight_controller_four_offboard

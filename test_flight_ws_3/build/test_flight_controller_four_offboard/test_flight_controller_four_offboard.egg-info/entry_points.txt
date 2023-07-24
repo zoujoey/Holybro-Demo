@@ -1,0 +1,10 @@
+[console_scripts]
+fake_pose_pub = test_flight_controller_four_offboard.fake_pose_pub:main
+offboard_control = test_flight_controller_four_offboard.offboard_control:main
+offboard_control_L = test_flight_controller_four_offboard.offboard_control_L:main
+offboard_control_circle = test_flight_controller_four_offboard.offboard_control_circle:main
+offboard_control_circle_tilted = test_flight_controller_four_offboard.offboard_control_circle_tilted:main
+offboard_control_square = test_flight_controller_four_offboard.offboard_control_square:main
+offboard_ex = test_flight_controller_four_offboard.offboard_ex:main
+offboard_hover = test_flight_controller_four_offboard.offboard_hover:main
+
