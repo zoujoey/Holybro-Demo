@@ -35,7 +35,7 @@ class OffboardControl(Node):
         self.timesync_callback = self.create_subscription(Timesync, 
                                                           "/fmu/timesync/in",self.timesync_callback,qos_profile)
         self.position_callback = self.create_subscription(PoseStamped,
-                                                          "/Wifi/Channel_One", self.position_callback,10)
+                                                          "/Wifi/Channel_One", self.position_callback,qos_profile)
         self.setpoint_callback = self.create_subscription(TrajectorySetpoint,
                                                           "/Wifi/Channel_Two", self.setpoint_callback, 10)
         self.offboard_setpoint_counter_ = 0
@@ -65,9 +65,9 @@ class OffboardControl(Node):
 
     # Setpoint_reached
     def setpoint_reached(self):
-        return ((self.pose.pose.position.z>(self.setpoint_current.z-0.1) and self.pose.pose.position.z<(self.setpoint_current.z+0.1)) and
-                ((self.pose.pose.position.x>(self.setpoint_current.x-0.1) and self.pose.pose.position.x<(self.setpoint_current.x+0.1)) and
-                (self.pose.pose.position.y>(self.setpoint_current.y-0.1) and self.pose.pose.position.y<(self.setpoint_current.y+0.1))))
+        return ((self.pose.pose.position.z>(self.setpoint_current.z-0.05) and self.pose.pose.position.z<(self.setpoint_current.z+0.05)) and
+                ((self.pose.pose.position.x>(self.setpoint_current.x-0.05) and self.pose.pose.position.x<(self.setpoint_current.x+0.05)) and
+                (self.pose.pose.position.y>(self.setpoint_current.y-0.05) and self.pose.pose.position.y<(self.setpoint_current.y+0.05))))
     
     #Callback Functions
     def position_callback(self, datum:PoseStamped):

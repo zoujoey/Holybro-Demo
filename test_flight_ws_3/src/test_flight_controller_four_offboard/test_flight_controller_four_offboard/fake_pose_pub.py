@@ -18,7 +18,7 @@ class publishernode(Node):
             reliability=QoSReliabilityPolicy.BEST_EFFORT,
             durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
         self.pos_pub = self.create_publisher(
-            PoseStamped, "/Wifi/Channel_One", 10)
+            PoseStamped, "/Wifi/Channel_One", qos_profile)
         self.timesync_callback = self.create_subscription(
             Timesync, "/fmu/timesync/in",self.timesync_callback,qos_profile)
         self.pose_callback = self.create_subscription(

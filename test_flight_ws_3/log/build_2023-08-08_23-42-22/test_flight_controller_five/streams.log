@@ -1,0 +1,16 @@
+[0.808s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/build --no-deps install_data
+[0.951s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.951s]   warnings.warn(
+[0.980s] running develop
+[1.075s] running egg_info
+[1.075s] creating test_flight_controller_five.egg-info
+[1.076s] writing manifest file 'test_flight_controller_five.egg-info/SOURCES.txt'
+[1.078s] writing manifest file 'test_flight_controller_five.egg-info/SOURCES.txt'
+[1.099s] running build_ext
+[1.100s] running install_data
+[1.100s] creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/ament_index
+[1.100s] creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/ament_index/resource_index
+[1.101s] creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/ament_index/resource_index/packages
+[1.101s] copying resource/test_flight_controller_five -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/ament_index/resource_index/packages
+[1.101s] copying package.xml -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/test_flight_controller_five
+[1.138s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/build --no-deps install_data

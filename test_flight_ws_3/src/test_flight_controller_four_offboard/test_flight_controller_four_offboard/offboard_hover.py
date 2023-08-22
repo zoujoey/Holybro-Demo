@@ -65,9 +65,9 @@ class OffboardControl(Node):
         # Offboard_control_mode needs to be paired with trajectory_setpoint
         self.publish_offboard_control_mode()
         self.publish_trajectory_setpoint()
-        if self.offboard_setpoint_counter_>100 and (self.pose.pose.position.z < -1.9 and self.pose.pose.position.z > -2.1):
+        if self.offboard_setpoint_counter_>100 and (self.pose.pose.position.z < -0.4 and self.pose.pose.position.z > -0.6):
             self.waypoint_reached = 1
-        if self.offboard_setpoint_counter_>150 and (self.pose.pose.position.z < -0.9 and self.pose.pose.position.z > -1.1):
+        if self.offboard_setpoint_counter_>150 and (self.pose.pose.position.z < -0.45 and self.pose.pose.position.z > -0.55):
             self.waypoint_reached = 2
         # stop the counter after reaching 11
         if (self.offboard_setpoint_counter_ < 200):
@@ -111,12 +111,12 @@ class OffboardControl(Node):
     def publish_trajectory_setpoint(self):
         msg = TrajectorySetpoint()
         if self.waypoint_reached == 0:
-            msg.x,msg.y,msg.z = 0.0, 0.0, -2.0 
+            msg.x,msg.y,msg.z = 0.0, 0.0, -0.5 
         if (self.offboard_setpoint_counter_>100) and self.waypoint_reached == 1:
-            msg.x,msg.y,msg.z = 0.0, 0.0, -1.0 
+            msg.x,msg.y,msg.z = 0.0, 0.0, -0.5 
         if (self.offboard_setpoint_counter_>150) and self.waypoint_reached == 2:
-            msg.x,msg.y,msg.z = 0.0, 0.0, -0.3 
-        msg.yaw = 0.  # [-PI:PI]
+            msg.x,msg.y,msg.z = 0.0, 0.0, -0.27 
+        msg.yaw = 1.5  # [-PI:PI]
         msg.timestamp = self.time()
         self.trajectory_setpoint_publisher_.publish(msg)
         self.get_logger().info(str(msg.z) +" " +str(self.waypoint_reached)+" "+str(self.pose.pose.position.z)+" "+str(self.offboard_setpoint_counter_))

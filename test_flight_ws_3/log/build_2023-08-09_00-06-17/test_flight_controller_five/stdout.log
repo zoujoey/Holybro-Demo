@@ -1,0 +1,7 @@
+running develop
+running egg_info
+writing manifest file 'test_flight_controller_five.egg-info/SOURCES.txt'
+running build_ext
+running install_data
+creating /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/test_flight_controller_five/launch
+copying launch/demo_launch.py -> /home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/share/test_flight_controller_five/launch

@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from px4_msgs.msg import VehicleVisualOdometry, Timesync
+import pyquaternion
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
 import time
@@ -40,11 +41,11 @@ class publishernode(Node):
         self.xdatum2.reset_counter = 5
     def pose_callback(self, datum:PoseStamped):
         msg = VehicleVisualOdometry()
-        msg.local_frame = 2
+        msg.local_frame = 0
         msg.x = datum.pose.position.x
         msg.y = datum.pose.position.y
         msg.z = datum.pose.position.z
-        msg.q = [datum.pose.orientation.x,datum.pose.orientation.y,datum.pose.orientation.z,datum.pose.orientation.w]
+        msg.q = [datum.pose.orientation.w,datum.pose.orientation.x,datum.pose.orientation.y,datum.pose.orientation.z]
         msg.velocity_frame = 1
         msg.vx = float("NaN")
         msg.vy = float("NaN")

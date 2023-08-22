@@ -4,6 +4,7 @@ from rclpy.node import Node
 from rclpy.clock import Clock
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy, QoSDurabilityPolicy, QoSReliabilityPolicy
+from vicon_receiver.msg import Position
 from px4_msgs.msg import VehicleOdometry, Timesync
 from px4_msgs.msg import OffboardControlMode
 from px4_msgs.msg import TrajectorySetpoint
@@ -20,6 +21,9 @@ class PositionGraph(Node):
             self.position_callback,
             10  # QoS profile depth
         )
+        #self.posedummy_pub = self.create_subscription(
+        #    Position, "/vicon/Holybro_Drone/Holybro_Drone", self.position_callback, 10)
+
         qos_profile = QoSProfile(
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=5,
@@ -31,6 +35,9 @@ class PositionGraph(Node):
         self.positions['x'].append(msg.x)
         self.positions['y'].append(msg.y)
         self.positions['z'].append(msg.z)
+        #self.positions['x'].append(msg.x_trans/1000)
+        #self.positions['y'].append(msg.y_trans/1000)
+        #self.positions['z'].append(msg.z_trans/1000)
         self.update_graph()
 
     def update_graph(self):

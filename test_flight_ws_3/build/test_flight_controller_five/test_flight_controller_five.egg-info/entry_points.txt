@@ -1,0 +1,10 @@
+[console_scripts]
+command_control = test_flight_controller_five.command_control:main
+keyboard_controller = test_flight_controller_five.keyboard_controller:main
+offboard_control = test_flight_controller_five.offboard_control:main
+set_path_circle = test_flight_controller_five.set_path_circle:main
+set_path_helix = test_flight_controller_five.set_path_helix:main
+set_path_hover = test_flight_controller_five.set_path_hover:main
+set_path_return = test_flight_controller_five.set_path_return:main
+set_path_square = test_flight_controller_five.set_path_square:main
+

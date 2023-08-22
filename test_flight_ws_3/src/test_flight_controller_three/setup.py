@@ -26,12 +26,6 @@ setup(
             "pose_rec = test_flight_controller_three.pose_rec:main",
             "pose_rec_two = test_flight_controller_three.pose_rec_two:main",
             "pose_rec_three = test_flight_controller_three.pose_rec_three:main",
-            "offboard_hover = test_flight_controller_three.offboard_hover:main",
-            "offboard_ex = test_flight_controller_three.offboard_ex:main",
-            "offboard_control = test_flight_controller_three.offboard_control:main",
-            "offboard_control_square = test_flight_controller_three.offboard_control_square:main",
-            "offboard_control_circle = test_flight_controller_three.offboard_control_circle:main",
-            "offboard_control_circle_tilted = test_flight_controller_three.offboard_control_circle_tilted:main",
             "pose_grapher = test_flight_controller_three.pose_grapher:main",
             "pose_grapher_xy = test_flight_controller_three.pose_grapher_xy:main"
         ],

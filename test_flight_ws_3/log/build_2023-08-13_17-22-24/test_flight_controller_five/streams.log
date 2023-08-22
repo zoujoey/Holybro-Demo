@@ -1,0 +1,9 @@
+[0.797s] Invoking command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/build --no-deps install_data
+[0.944s] /home/asrl/.local/lib/python3.8/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.944s]   warnings.warn(
+[0.973s] running develop
+[1.065s] running egg_info
+[1.074s] writing manifest file 'test_flight_controller_five.egg-info/SOURCES.txt'
+[1.095s] running build_ext
+[1.096s] running install_data
+[1.140s] Invoked command in '/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five' returned '0': PYTHONPATH=/home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/prefix_override:/home/asrl/Holybro-Demo/test_flight_ws_3/install/test_flight_controller_five/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/asrl/Holybro-Demo/test_flight_ws_3/build/test_flight_controller_five/build --no-deps install_data
