@@ -31,34 +31,31 @@ class PositionGraph(Node):
             depth=5,
             reliability=QoSReliabilityPolicy.BEST_EFFORT,
             durability = QoSDurabilityPolicy.TRANSIENT_LOCAL)
-        self.positions = {'x': [], 'y': [], 'z': []}
-        self.fig = plt.figure()
-        self.ax = plt.axes(projection='3d')  # Create a 3D subplot
+        self.x_positions = []
+        self.y_positions = []
+        self.fig, self.ax = plt.subplots()  # Create a 3D subplot
         self.fig.canvas.mpl_connect('close_event', self.save_plot)
 
     def position_callback(self, msg):
-        self.positions['x'].append(msg.x)
-        self.positions['y'].append(msg.y)
-        self.positions['z'].append(-msg.z)
-        # self.positions['x'].append(msg.x_trans/1000)
-        # self.positions['y'].append(msg.y_trans/1000)
-        # self.positions['z'].append(msg.z_trans/1000)
+        self.x_positions.append(msg.x)
+        self.y_positions.append(msg.y)
+        # self.x_positions.append(msg.x_trans/1000)
+        # self.y_positions.append(msg.y_trans/1000)
         self.update_graph()
 
     def update_graph(self):
-        self.ax.plot(self.positions['x'], self.positions['y'], self.positions['z'], color='blue')
+        self.ax.plot(self.x_positions, self.y_positions, color='blue')
 
         # Set labels and title
-        plt.title('VICON Positions X vs VICON Positions Y vs VICON Positions Z')
+        plt.title('VICON Positions X vs VICON Positions Y')
         self.ax.set_xlabel('X')
         self.ax.set_ylabel('Y')
-        self.ax.set_zlabel('Z')
         self.ax.set_title('Position Trajectory')
         plt.draw()
         plt.pause(0.001)
     def save_plot(self, event):
-        self.ax.figure.savefig('Vicon_position_trajectory.png')
-        print("Plot saved as 'Vicon_position_trajectory.png'")
+        self.ax.figure.savefig('Vicon_xy_position_trajectory.png')
+        print("Plot saved as 'Vicon_xy_position_trajectory.png'")
 
 def main(args=None):
     rclpy.init(args=args)

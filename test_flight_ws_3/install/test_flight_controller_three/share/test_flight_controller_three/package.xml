@@ -16,6 +16,7 @@
   <depend>time</depend>
   <depend>pyquaternion</depend>
   <depend>math</depend>
+  <depend>mpl_toolkits</depend>
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

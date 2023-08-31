@@ -60,6 +60,8 @@ class OffboardControl(Node):
             'r': 'return',
             'x': 'fail-safe land',
             'f': 'float',
+            't': 'linear_setpoint',
+            'y': 'continuous_setpoint'
         }
         self.control = True
         timer_period = 0.01  # 100 milliseconds
@@ -111,6 +113,7 @@ class OffboardControl(Node):
             self.bind = keyz
             self.control = False
         if keyz == 'x' and (self.pose.pose.position.z>self.sp[2]+self.config['command']['kh']):
+            self.bind = keyz
             self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_COMPONENT_ARM_DISARM, 0.0, 21196.0)
             self.get_logger().info("Kill command send")
             
@@ -149,8 +152,8 @@ class OffboardControl(Node):
         self.last_update_time_abs = int(time.time()*1000000)
         return self.last_update_time_rel
     def setpoint_boundary(self, pose):
-        return (((pose[0]<self.mx and pose[0]>-self.mx) and 
-                 (pose[1]<self.my and pose[1]>-self.my)) and 
+        return (((pose[0]<(self.sp[0]+self.mx) and pose[0]>(self.sp[0]-self.mx)) and 
+                 (pose[1]<(self.sp[1]+self.my) and pose[1]>(self.sp[1]-self.my))) and 
                  (pose[2]<self.sp[2] and pose[2]>-self.mz))
     # Setpoint_near
     def setpoint_near(self, pose,l):

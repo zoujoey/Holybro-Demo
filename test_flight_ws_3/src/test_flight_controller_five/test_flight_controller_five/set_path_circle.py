@@ -134,7 +134,7 @@ class OffboardControl(Node):
         atp2 = math.atan2(dy, dx)
         if atp2<0:
             atp2 = 2*pi+atp2
-        if atp1<=pi and atp2>(2*pi-2*pi/(self.ns)):
+        if atp1<=(4*pi/self.ns+0.2) and atp2>(2*pi-4*pi/(self.ns)-0.2):
             return 1
         elif atp1>=atp2:
             return 1

@@ -22,6 +22,7 @@
   <depend>pynput</depend>
   <depend>yaml</depend>
   <depend>os</depend>
+  <depend>random</depend>
   <exec_depend>demo_nodes_cpp</exec_depend>
   <exec_depend>demo_nodes_py</exec_depend>
 

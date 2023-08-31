@@ -56,6 +56,7 @@ class OffboardControl(Node):
         sp = (self.config['start']['spx'],self.config['start']['spy'],self.config['start']['spz'],self.config['start']['spyaw'])
         self.setpoint_targets = [sp,
                                  (sp[0]+0.00, sp[1]+0.00, sp[2]+self.config['command']['rh'], sp[3]+0.00)]
+        self.speed = self.config['command']['ms']
         self.bind = 'z'   
     def control_mode_callback(self, datum:String):
         self.bind = datum.data
@@ -87,29 +88,46 @@ class OffboardControl(Node):
     def timesync_callback(self, datum1:Timesync):
         self.last_update_time_rel= datum1.timestamp
         self.last_update_time_abs = int(time.time()*1000000)
-    def hov(self,x1, y1, x2, y2):
-        #horizontal or vertical
-        if x2==x1:
-            return True
-        elif y2== y1:
-            return False
-    def gd(self,a,b):
-        #get direction
-        if a-b<0:
-            return -1
-        else:
-            return 1
-    def tpol(self,x1,y1,x2,y2,x3,y3,d):
-        #translated point on line from x2,y2 to x1,y1
-        if self.hov(x1,y1,x2,y2):
-            if abs(y1-y3)<=0.3:
-                return [x1,y1]
-            return [x1,y3+d*self.gd(y1,y3)]
-        else:
-            if abs(x1-x3)<=0.3:
-                return [x1,y1]
-            return [x3+d*self.gd(x1,x3),y1]
-    #Current time (vehicle)
+    def tpol(self, x1, y1, z1, x2, y2, z2, x3, y3, z3, d):
+        if abs(x3 - x2) <= d and abs(y3 - y2) <= d and abs(z3 - z2) <= d:
+        # Use point B if the projected point is close enough
+            return (x2,y2,z2)
+        # Calculate the direction vector AB
+        dx_ab = x2 - x1
+        dy_ab = y2 - y1
+        dz_ab = z2 - z1
+        
+        # Calculate the dot product of AB and AC
+        dot_product = dx_ab * (x3 - x1) + dy_ab * (y3 - y1) + dz_ab * (z3 - z1)
+        
+        # Calculate the square of the length of AB
+        length_ab_squared = dx_ab ** 2 + dy_ab ** 2 + dz_ab ** 2
+        
+        # Calculate the scaling factor for projection
+        t = dot_product / length_ab_squared
+        
+        # Calculate the projected point P(x4, y4, z4)
+        x4 = x1 + t * dx_ab
+        y4 = y1 + t * dy_ab
+        z4 = z1 + t * dz_ab
+        
+        # Calculate the displacement vector along AB
+        dx_disp = x2 - x4
+        dy_disp = y2 - y4
+        dz_disp = z2 - z4
+        
+        # Normalize the displacement vector
+        length_disp = (dx_disp ** 2 + dy_disp ** 2 + dz_disp ** 2) ** 0.5
+        dx_disp /= length_disp
+        dy_disp /= length_disp
+        dz_disp /= length_disp
+        
+        # Translate the projected point P forward by d units along AB
+        x4 += d * dx_disp
+        y4 += d * dy_disp
+        z4 += d * dz_disp
+        
+        return (x4, y4, z4)
     def time(self):
         self.last_update_time_rel = int(time.time()*1000000) - self.last_update_time_abs + self.last_update_time_rel
         self.last_update_time_abs = int(time.time()*1000000)
@@ -124,8 +142,10 @@ class OffboardControl(Node):
     # Publish a Setpoint and Set Current Setpoint
     def publish_trajectory_setpoint(self, pose1:tuple, pose2:tuple):
         msg = TrajectorySetpoint()
-        posef = (self.tpol(pose2[0], pose2[1], pose1[0], pose1[1], self.pose.pose.position.x, self.pose.pose.position.y,0.3))
-        msg.x, msg.y, msg.z = posef[0], posef[1], pose2[2]
+        posef = (self.tpol(pose1[0], pose1[1], pose1[2], pose2[0], pose2[1], pose2[2], 
+                           self.pose.pose.position.x, self.pose.pose.position.y, self.pose.pose.position.z, 
+                           self.speed))
+        msg.x, msg.y, msg.z = posef[0], posef[1], posef[2]
         msg.yaw = pose2[3]
         msg.timestamp = self.time()
         self.trajectory_setpoint_publisher_.publish(msg)

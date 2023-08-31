@@ -21,6 +21,8 @@ class PublisherNode(Node):
         q: Square Loop
         e: Circle Loop
         h: Helix Loop
+        t: Linear Setpoints
+        p: Random Continuous Setpoints
         """
         self.get_logger().info(instructions)
         self.listener = keyboard.Listener(on_press=self.on_key_press, on_release=self.on_key_release)

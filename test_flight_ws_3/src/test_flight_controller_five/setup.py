@@ -30,7 +30,10 @@ setup(
             "set_path_return = test_flight_controller_five.set_path_return:main",
             "set_path_square = test_flight_controller_five.set_path_square:main",
             "set_path_circle = test_flight_controller_five.set_path_circle:main",
-            "set_path_helix = test_flight_controller_five.set_path_helix:main"
+            "set_path_helix = test_flight_controller_five.set_path_helix:main",
+            "set_path_linear_setpoint = test_flight_controller_five.set_path_linear_setpoint:main",
+            "set_path_continuous_setpoint = test_flight_controller_five.set_path_continuous_setpoint:main"
+            
         ],
     },
 )
